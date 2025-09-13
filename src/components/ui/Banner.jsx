@@ -5,7 +5,7 @@ const Banner = ({ imageUrl, title, subtitle }) => {
   const defaultImage = "/default_banner.jpg";
 
   return (
-    <div className="relative w-full h-[95vh] overflow-hidden rounded-lg shadow-lg">
+    <div className="relative w-full h-[50vh] lg:h-[95vh] overflow-hidden rounded-xl shadow-2xl">
       <Image
         src={imageUrl || defaultImage}
         alt={title || "Banner Image"}
@@ -14,28 +14,46 @@ const Banner = ({ imageUrl, title, subtitle }) => {
         priority
       />
 
-      {/* Dark overlay only if title or subtitle is present */}
-      {(title || subtitle) && (
-        <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
-      )}
+      {/* Gradient overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10"></div>
 
-      {/* Content area with updated styling */}
-      {(title || subtitle) && (
-        <div className="absolute inset-0 flex items-center h-full px-4 md:px-8 z-20 pointer-events-none">
-          <div className="font-heading text-white w-full lg:w-3/5 space-y-6 pl-8 lg:pl-16 text-left pointer-events-auto">
-            {title && (
-              <h4 className="sm:text-3xl text-[20px] lg:text-4xl font-bold mb-4">
-                {title}
-              </h4>
-            )}
-            {subtitle && (
-              <p className="text-[12px] sm:text-[16px]">
-                {subtitle}
-              </p>
-            )}
+      {/* Content area */}
+      <div className="absolute inset-0 flex items-end lg:items-center pb-8 lg:pb-0 px-4 md:px-8 z-20">
+        <div className=" text-white w-full max-w-6xl mx-auto space-y-4 md:space-y-6 text-left">
+          {title && (
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold leading-tight drop-shadow-lg">
+              {title}
+            </h1>
+          )}
+          {subtitle && (
+            <p className="text-lg md:text-xl lg:text-2xl text-blue-100 font-light max-w-3xl drop-shadow-md">
+              {subtitle}
+            </p>
+          )}
+          
+          {/* Contact buttons with improved styling */}
+          <div className="flex flex-wrap gap-3 mt-6">
+            <button className="bg-white/10 backdrop-blur-sm text-white border border-white/30 font-medium px-4 py-2 rounded-xl shadow-lg hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              Call Now →
+            </button>
+            <button className="bg-white/10 backdrop-blur-sm text-white border border-white/30 font-medium px-4 py-2 rounded-xl shadow-lg hover:bg-white/20 transition-all duration-300">
+              09674673674
+            </button>
+            <button className="bg-white/10 backdrop-blur-sm text-white border border-white/30 font-medium px-4 py-2 rounded-xl shadow-lg hover:bg-white/20 transition-all duration-300">
+              01777277727
+            </button>
+            <button className="bg-white/10 backdrop-blur-sm text-white border border-white/30 font-medium px-4 py-2 rounded-xl shadow-lg hover:bg-white/20 transition-all duration-300">
+              098563564546
+            </button>
           </div>
         </div>
-      )}
+      </div>
+
+      {/* Decorative elements */}
+      <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
     </div>
   );
 };

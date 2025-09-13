@@ -146,14 +146,14 @@ const BookMeHeader = () => {
               <div className="logo flex items-center space-x-2">
                 <Link href={"/"} prefetch className="flex items-center space-x-2 cursor-pointer">
                   <Image
-                    src="/assets/images/logo.jpg"
+                    src="/assets/images/logo.png"
                     alt="logo"
                     width={50}
                     height={50}
                     className="changeLogo"
                     priority
                   />
-                  <span className="text-xl italic font-bold text-[#00026E]">Mv The crown</span>
+                  <span className="text-2xl italic font-bold text-[#010127]">Mv The crown</span>
                 </Link>
               </div>
 

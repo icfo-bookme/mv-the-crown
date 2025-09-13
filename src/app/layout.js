@@ -1,17 +1,15 @@
-import { Geist, Geist_Mono } from "next/font/google";
+// app/layout.js or app/layout.tsx
+
 import "./globals.css";
 import Header from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-// import Header from "@/components/common/Navbar";
+import { Prata } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Correct usage of Prata font
+const prata = Prata({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
 });
 
 export const metadata = {
@@ -22,9 +20,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      {/* Apply Prata font using className */}
+      <body className={`${prata.className} antialiased`}>
         <Header />
         {children}
         <Footer />
