@@ -3,6 +3,7 @@
 import React, { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Roboto } from "next/font/google";
 import { FaPhone, FaWhatsapp, FaBars, FaTimes, FaChevronRight } from "react-icons/fa";
 
@@ -11,6 +12,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: ["400"] });
 const BookMeHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef(null);
+  const pathname = usePathname(); // Get current path
 
   const toggleMobileMenu = useCallback(() => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -19,6 +21,14 @@ const BookMeHeader = () => {
   const closeAllMenus = useCallback(() => {
     setIsMobileMenuOpen(false);
   }, []);
+
+  // Check if a link is active
+  const isActiveLink = (href) => {
+    if (href === "/") {
+      return pathname === href;
+    }
+    return pathname.startsWith(href);
+  };
 
   // Mobile menu component
   const MobileMenu = () => {
@@ -44,60 +54,90 @@ const BookMeHeader = () => {
             <li>
               <Link
                 href="/"
-                className="flex items-center justify-between py-3 px-4 text-sm text-[#00026E] hover:bg-blue-50 rounded-lg transition-colors duration-200 group"
+                className={`flex items-center justify-between py-3 px-4 text-sm hover:bg-blue-50 rounded-lg transition-colors duration-200 group ${
+                  isActiveLink("/") 
+                    ? "bg-blue-50 text-blue-600 font-semibold" 
+                    : "text-[#00026E]"
+                }`}
                 onClick={closeAllMenus}
                 prefetch
               >
                 <span className="font-medium">Home</span>
-                <FaChevronRight className="text-blue-400 group-hover:translate-x-1 transition-transform" />
+                <FaChevronRight className={`group-hover:translate-x-1 transition-transform ${
+                  isActiveLink("/") ? "text-blue-600" : "text-blue-400"
+                }`} />
               </Link>
             </li>
 
             <li>
               <Link
                 href="/schedule"
-                className="flex items-center justify-between py-3 px-4 text-sm text-[#00026E] hover:bg-blue-50 rounded-lg transition-colors duration-200 group"
+                className={`flex items-center justify-between py-3 px-4 text-sm hover:bg-blue-50 rounded-lg transition-colors duration-200 group ${
+                  isActiveLink("/schedule") 
+                    ? "bg-blue-50 text-blue-600 font-semibold" 
+                    : "text-[#00026E]"
+                }`}
                 onClick={closeAllMenus}
                 prefetch
               >
                 <span className="font-medium">Schedule</span>
-                <FaChevronRight className="text-blue-400 group-hover:translate-x-1 transition-transform" />
+                <FaChevronRight className={`group-hover:translate-x-1 transition-transform ${
+                  isActiveLink("/schedule") ? "text-blue-600" : "text-blue-400"
+                }`} />
               </Link>
             </li>
 
             <li>
               <Link
                 href="/ticket"
-                className="flex items-center justify-between py-3 px-4 text-sm text-[#00026E] hover:bg-blue-50 rounded-lg transition-colors duration-200 group"
+                className={`flex items-center justify-between py-3 px-4 text-sm hover:bg-blue-50 rounded-lg transition-colors duration-200 group ${
+                  isActiveLink("/ticket") 
+                    ? "bg-blue-50 text-blue-600 font-semibold" 
+                    : "text-[#00026E]"
+                }`}
                 onClick={closeAllMenus}
                 prefetch
               >
                 <span className="font-medium">Ticket</span>
-                <FaChevronRight className="text-blue-400 group-hover:translate-x-1 transition-transform" />
+                <FaChevronRight className={`group-hover:translate-x-1 transition-transform ${
+                  isActiveLink("/ticket") ? "text-blue-600" : "text-blue-400"
+                }`} />
               </Link>
             </li>
 
             <li>
               <Link
                 href="/payment"
-                className="flex items-center justify-between py-3 px-4 text-sm text-[#00026E] hover:bg-blue-50 rounded-lg transition-colors duration-200 group"
+                className={`flex items-center justify-between py-3 px-4 text-sm hover:bg-blue-50 rounded-lg transition-colors duration-200 group ${
+                  isActiveLink("/payment") 
+                    ? "bg-blue-50 text-blue-600 font-semibold" 
+                    : "text-[#00026E]"
+                }`}
                 onClick={closeAllMenus}
                 prefetch
               >
                 <span className="font-medium">Payment</span>
-                <FaChevronRight className="text-blue-400 group-hover:translate-x-1 transition-transform" />
+                <FaChevronRight className={`group-hover:translate-x-1 transition-transform ${
+                  isActiveLink("/payment") ? "text-blue-600" : "text-blue-400"
+                }`} />
               </Link>
             </li>
 
             <li>
               <Link
                 href="/contact"
-                className="flex items-center justify-between py-3 px-4 text-sm text-[#00026E] hover:bg-blue-50 rounded-lg transition-colors duration-200 group"
+                className={`flex items-center justify-between py-3 px-4 text-sm hover:bg-blue-50 rounded-lg transition-colors duration-200 group ${
+                  isActiveLink("/contact") 
+                    ? "bg-blue-50 text-blue-600 font-semibold" 
+                    : "text-[#00026E]"
+                }`}
                 onClick={closeAllMenus}
                 prefetch
               >
                 <span className="font-medium">Contact</span>
-                <FaChevronRight className="text-blue-400 group-hover:translate-x-1 transition-transform" />
+                <FaChevronRight className={`group-hover:translate-x-1 transition-transform ${
+                  isActiveLink("/contact") ? "text-blue-600" : "text-blue-400"
+                }`} />
               </Link>
             </li>
           </ul>
@@ -162,7 +202,11 @@ const BookMeHeader = () => {
               <div className="hidden lg:flex items-center gap-6">
                 <Link
                   href="/"
-                  className="text-sm text-[#00026E] hover:text-blue-600 font-medium transition-colors duration-200"
+                  className={`text-sm font-medium transition-colors duration-200 ${
+                    isActiveLink("/")
+                      ? "text-blue-600 border-b-2 border-blue-600"
+                      : "text-[#00026E] hover:text-blue-600"
+                  }`}
                   prefetch
                 >
                   HOME
@@ -170,7 +214,11 @@ const BookMeHeader = () => {
 
                 <Link
                   href="/schedule"
-                  className="text-sm text-[#00026E] hover:text-blue-600 font-medium transition-colors duration-200"
+                  className={`text-sm font-medium transition-colors duration-200 ${
+                    isActiveLink("/schedule")
+                      ? "text-blue-600 border-b-2 border-blue-600"
+                      : "text-[#00026E] hover:text-blue-600"
+                  }`}
                   prefetch
                 >
                   SCHEDULE
@@ -178,7 +226,11 @@ const BookMeHeader = () => {
 
                 <Link
                   href="/ticket"
-                  className="text-sm text-[#00026E] hover:text-blue-600 font-medium transition-colors duration-200"
+                  className={`text-sm font-medium transition-colors duration-200 ${
+                    isActiveLink("/ticket")
+                      ? "text-blue-600 border-b-2 border-blue-600"
+                      : "text-[#00026E] hover:text-blue-600"
+                  }`}
                   prefetch
                 >
                   TICKET
@@ -186,7 +238,11 @@ const BookMeHeader = () => {
 
                 <Link
                   href="/payment"
-                  className="text-sm text-[#00026E] hover:text-blue-600 font-medium transition-colors duration-200"
+                  className={`text-sm font-medium transition-colors duration-200 ${
+                    isActiveLink("/payment")
+                      ? "text-blue-600 border-b-2 border-blue-600"
+                      : "text-[#00026E] hover:text-blue-600"
+                  }`}
                   prefetch
                 >
                   PAYMENT
@@ -194,7 +250,11 @@ const BookMeHeader = () => {
 
                 <Link
                   href="/contact"
-                  className="text-sm text-[#00026E] hover:text-blue-600 font-medium transition-colors duration-200"
+                  className={`text-sm font-medium transition-colors duration-200 ${
+                    isActiveLink("/contact")
+                      ? "text-blue-600 border-b-2 border-blue-600"
+                      : "text-[#00026E] hover:text-blue-600"
+                  }`}
                   prefetch
                 >
                   CONTACT

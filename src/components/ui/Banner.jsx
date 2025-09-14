@@ -5,7 +5,7 @@ const Banner = ({ imageUrl, title, subtitle }) => {
   const defaultImage = "/default_banner.jpg";
 
   return (
-    <div className="relative w-full h-[50vh] lg:h-[95vh] overflow-hidden rounded-xl shadow-2xl">
+    <div className="relative w-full h-[50vh] lg:h-[95vh] overflow-hidden  shadow-2xl">
       <Image
         src={imageUrl || defaultImage}
         alt={title || "Banner Image"}
@@ -16,6 +16,7 @@ const Banner = ({ imageUrl, title, subtitle }) => {
 
       {/* Gradient overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10"></div>
+<div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-blue-500/20 to-transparent z-10"></div>
 
       {/* Content area */}
       <div className="absolute inset-0 flex items-end lg:items-center pb-8 lg:pb-0 px-4 md:px-8 z-20">

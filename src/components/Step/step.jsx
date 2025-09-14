@@ -30,10 +30,10 @@ export default function StepProcess() {
                 Ticket Booking <span className="text-red-700">Process</span>
             </h4>
 
-            <div className="flex flex-col items-center md:flex-row md:justify-center md:gap-24 ">
+            <div className="flex  items-center flex-row md:justify-center md:gap-24 ">
                 {steps.map((step, index) => (
                     <div key={index} className="flex flex-col items-center text-center relative">
-                        <div className="bg-gray-100 p-4 rounded-full mb-4 shadow-md w-24 h-24 flex items-center justify-center">
+                        <div className="bg-gray-100 p-4 rounded-full mb-4 shadow-md w-14 h-14 md:w-24 md:h-24 flex items-center justify-center">
                             <Image
                                 src={step.icon}
                                 alt={step.description}
@@ -47,7 +47,7 @@ export default function StepProcess() {
 
                         {/* Dotted line between steps for medium+ screens */}
                         {index < steps.length - 1 && (
-                            <div className="hidden md:block absolute right-[-105px] top-12 w-28 h-px border-t border-dashed border-gray-400"></div>
+                            <div className="  absolute right-[-18px] md:right-[-105px] top-7 md:top-12 w-8 md:w-28 h-px border-t border-dashed border-gray-400"></div>
                         )}
                     </div>
                 ))}
