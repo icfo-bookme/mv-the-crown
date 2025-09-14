@@ -1,3 +1,14 @@
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaCrown,
+} from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-12 pb-8">
@@ -6,29 +17,44 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4 flex items-center">
-              <i className="fas fa-crown mr-2 text-yellow-400"></i>
+              <FaCrown className="mr-2 text-blue-50 -mt-2" />
               MV The Crown
             </h3>
             <p className="text-gray-400 mb-4 max-w-md">
-              Experience luxury river cruises from Khulna with premium amenities, 
-              breathtaking views, and exceptional service.
+              Experience luxury river cruises from Khulna with premium
+              amenities, breathtaking views, and exceptional service.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <i className="fab fa-facebook-f text-lg"></i>
+
+            <div className="flex space-x-4 mb-6">
+              <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition">
+                <FaFacebookF className="text-lg" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <i className="fab fa-twitter text-lg"></i>
+              <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-white transition">
+                <FaTwitter className="text-lg" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <i className="fab fa-instagram text-lg"></i>
+              <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transition">
+                <FaInstagram className="text-lg" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <i className="fab fa-linkedin-in text-lg"></i>
+              <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition">
+                <FaLinkedinIn className="text-lg" />
               </a>
             </div>
+
+            <div>
+              <h4 className="text-lg font-semibold mb-2">Subscribe to Our Newsletter</h4>
+              <div className="flex w-[70%] md:w-auto">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  className="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full"
+                />
+                <button className="bg-blue-950 hover:bg-yellow-600 text-gray-50 border border-gray-500 font-semibold px-4 py-2 rounded-r-lg transition">
+                  Subscribe
+                </button>
+              </div>
+            </div>
           </div>
-          
+
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
@@ -40,59 +66,36 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-white transition">Contact Us</a></li>
             </ul>
           </div>
-          
+
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div className="flex items-start">
-                <i className="fas fa-phone-alt mt-1 mr-3 text-yellow-400"></i>
+                <FaPhoneAlt className="mt-1 mr-3 text-blue-500" />
                 <div>
-                  <p className="text-gray-400">Call Anytime</p>
-                  <p className="font-medium">01923239293</p>
+                  <p className="text-gray-400 text-sm">Call Anytime</p>
+                  <p className="font-medium text-sm">01923239293</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <i className="fas fa-envelope mt-1 mr-3 text-yellow-400"></i>
+                <FaEnvelope className="mt-1 mr-3 text-blue-500" />
                 <div>
-                  <p className="text-gray-400">Email</p>
-                  <p className="font-medium">info@mvthecrown.com</p>
+                  <p className="text-gray-400 text-sm">Email</p>
+                  <p className="font-medium text-sm">info@mvthecrown.com</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <i className="fas fa-map-marker-alt mt-1 mr-3 text-yellow-400"></i>
+                <FaMapMarkerAlt className="mt-1 mr-3 text-blue-500" />
                 <div>
-                  <p className="text-gray-400">Location</p>
-                  <p className="font-medium">IFCO Complex(2nd floor), GEC Circle, CDA Avenue, Chattogram</p>
+                  <p className="text-gray-400 text-sm">Location</p>
+                  <p className="font-medium text-sm">
+                    IFCO Complex (2nd floor), GEC Circle, CDA Avenue, Chattogram
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        
-        {/* Newsletter Subscription */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <h4 className="text-lg font-semibold">Subscribe to Our Newsletter</h4>
-              <p className="text-gray-400">Get updates on special offers and events</p>
-            </div>
-            <div className="flex w-full md:w-auto">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                className="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full"
-              />
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold px-4 py-2 rounded-r-lg transition">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
-        
-        {/* Copyright */}
-        <div className="mt-8 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} MV The Crown. All rights reserved. | Designed with <i className="fas fa-heart text-red-500"></i></p>
         </div>
       </div>
     </footer>

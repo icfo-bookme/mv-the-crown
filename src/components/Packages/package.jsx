@@ -104,15 +104,15 @@ export default function Packages({ packages }) {
     return (
 
         <div className="max-w-5xl mx-auto px-4 py-12">
-            <div className={` ${roboto.className} text-center mb-12`}>
-                <h4 className="text-3xl text-center text-gray-700  pt-8 lg:text-3xl font-bold mb-1">
+            <div className={`  text-center mb-12`}>
+                <h4 className="text-3xl text-center text-gray-950  pt-8 lg:text-3xl font-bold mb-1">
                     MV The Crown <span className="text-red-700">Packages</span>
                 </h4>
-                <p className="text-gray-600 max-w-2xl mx-auto">
+                <p className="text-gray-900 max-w-2xl mx-auto">
                     Explore our premium cruise packages with exceptional amenities and competitive pricing
                 </p>
             </div>
-            <div className={roboto.className}>
+            <div className={`${roboto.className}`}>
                 {isLoading ? (
                     <div className="grid grid-cols-1 gap-8">
                         {[1, 2, 3].map((item) => (
@@ -265,6 +265,9 @@ export default function Packages({ packages }) {
                                                     </button>
 
                                                     <PrimaryButton
+                                                     style={{
+                                                            background: 'linear-gradient(90deg, #1B5E20, #43A047)',
+                                                        }}
                                                         onClick={handleWhatsApp}
                                                         bgColor="bg-green-800"
                                                         hoverColor="hover:bg-green-600"
@@ -279,6 +282,15 @@ export default function Packages({ packages }) {
                                 </div>
                             );
                         })}
+                        <div className="flex flex-col items-center space-y-2">
+                            <p className="text-lg text-red-600 font-semibold text-center">
+                                To Buy Ticket Sign Up & Get A Call
+                            </p>
+                            <button className="bg-gradient-to-r from-[#313881] to-[#0678B4] text-white px-4 py-2 rounded">
+                                Sign Up Now
+                            </button>
+                        </div>
+
                     </div>
                 ) : (
                     <div className="text-center py-12 bg-gray-50 rounded-xl">

@@ -109,7 +109,9 @@ const ImageCarousel = ({ propertyImages }) => {
 
   return (
     <div className="py-10">
-      <h1 className="text-center text-2xl font-bold mb-4">Photo Gallery</h1>
+      <h4 className="text-3xl text-center text-gray-950  py-8 lg:text-3xl font-bold mb-4">
+                Photo <span className="text-red-700">Gallery</span>
+            </h4>
       <div
         className="flex lg:flex-row flex-col items-start gap-4 mx-auto bg-[#EBF0F4]"
         style={{ maxWidth: "90%" }}

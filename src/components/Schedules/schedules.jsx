@@ -61,9 +61,9 @@ export default function Schedules({ schedules }) {
     return (
         <div>
             <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-3xl text-center font-bold text-blue-950">Upcoming Schedule Of MV The Crown</h2>
-                <h2 className="text-3xl text-center mt-2 font-semibold text-gray-600">Khulna-Saint Martin-Khulna</h2>
-                <p className="text-center text-base font-semibold text-red-800">“Schedule may change with tidal state’’</p>
+                <h2 className="text-3xl text-center font-bold text-gray-950">Upcoming Schedule Of <span className="text-red-600">MV The Crown</span></h2>
+                <h2 className="text-3xl text-center mt-2 font-semibold text-gray-700">Khulna-Saint Martin-Khulna</h2>
+                <p className="text-center text-base font-semibold text-red-600">“Schedule may change with tidal state’’</p>
             </div>
 
             <div className={`bg-white ${roboto.className} rounded-lg shadow-md overflow-hidden max-w-5xl mx-auto my-8`}>
@@ -73,8 +73,8 @@ export default function Schedules({ schedules }) {
                         {Object.keys(schedules).map((month) => (
                             <button
                                 key={month}
-                                className={`py-4 bg-blue-100 mt-2 px-6 text-sm font-medium whitespace-nowrap border-b-2 transition-colors ${activeMonth === month
-                                        ? 'border-blue-500 text-blue-600'
+                                className={`py-4 bg-blue-100 mt-2 px-6 text-sm  whitespace-nowrap border-b-2 transition-colors ${activeMonth === month
+                                        ? 'border-blue-500 text-blue-950 font-bold text-base'
                                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                     }`}
                                 onClick={() => setActiveMonth(month)}
@@ -96,16 +96,16 @@ export default function Schedules({ schedules }) {
                                 <table className="min-w-full border-separate border-spacing-x-[10px] divide-y divide-gray-200">
                                     <thead>
                                         <tr className="bg-gray-50">
-                                            <th className="px-6 py-3 bg-[#5F98AC] text-center text-base font-medium text-white uppercase tracking-wider">
+                                            <th className="px-6 py-3 bg-[#0f5974] text-center text-base font-medium text-white uppercase tracking-wider">
                                                 Departure
                                             </th>
-                                            <th className="px-6 py-3 bg-[#5F98AC] text-center text-base font-medium text-white uppercase tracking-wider">
+                                            <th className="px-6 py-3 bg-[#0f5974] text-center text-base font-medium text-white uppercase tracking-wider">
                                                 Time
                                             </th>
-                                            <th className="px-6 py-3 bg-[#5F98AC] text-center text-base font-medium text-white uppercase tracking-wider">
+                                            <th className="px-6 py-3 bg-[#0f5974] text-center text-base font-medium text-white uppercase tracking-wider">
                                                 Return
                                             </th>
-                                            <th className="px-6 py-3 bg-[#5F98AC] text-center text-base font-medium text-white uppercase tracking-wider">
+                                            <th className="px-6 py-3 bg-[#0f5974] text-center text-base font-medium text-white uppercase tracking-wider">
                                                 Time
                                             </th>
                                         </tr>

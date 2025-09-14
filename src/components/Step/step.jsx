@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { Roboto } from 'next/font/google';
+
+const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
 
 const steps = [
     {
@@ -26,11 +29,11 @@ const steps = [
 export default function StepProcess() {
     return (
         <div>
-            <h4 className="text-3xl text-center text-gray-700  py-8 lg:text-3xl font-bold mb-4">
+            <h4 className="text-3xl text-center text-gray-950  py-8 lg:text-3xl font-bold mb-4">
                 Ticket Booking <span className="text-red-700">Process</span>
             </h4>
 
-            <div className="flex  items-center flex-row md:justify-center md:gap-24 ">
+            <div className={`${roboto.className} flex  items-center flex-row md:justify-center md:gap-24`}>
                 {steps.map((step, index) => (
                     <div key={index} className="flex flex-col items-center text-center relative">
                         <div className="bg-gray-100 p-4 rounded-full mb-4 shadow-md w-14 h-14 md:w-24 md:h-24 flex items-center justify-center">
@@ -42,8 +45,8 @@ export default function StepProcess() {
                                 className="object-contain"
                             />
                         </div>
-                        <p className="text-sm font-medium text-gray-700">{step.title}</p>
-                        <p className="text-md text-gray-900">{step.description}</p>
+                        <p className="text-base font-medium text-gray-700">{step.title}</p>
+                        <p className="text-base font-semibold text-gray-800">{step.description}</p>
 
                         {/* Dotted line between steps for medium+ screens */}
                         {index < steps.length - 1 && (

@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import crownImage from '../../../public/the-crown.jpg'; 
-
+import crownImage from '../../../public/the-crown.jpg';
+import { Roboto } from 'next/font/google';
+const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
 export default function CruisePromo() {
   return (
     <section className=" max-w-6xl mx-auto  text-gray-900 px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-10">
@@ -10,7 +11,7 @@ export default function CruisePromo() {
       <div className="md:w-1/2 space-y-5">
         <h2 className="text-3xl md:text-4xl font-semibold leading-snug">
           Discover Royal Luxury <br />
-          <span className="text-indigo-700">Aboard MV The Crown</span>
+          <span className="text-red-700">Aboard MV The Crown</span>
         </h2>
 
         {/* Stars */}
@@ -19,12 +20,14 @@ export default function CruisePromo() {
         </div>
 
         {/* Description */}
-        <p className="text-gray-700 leading-relaxed text-justify">
+        <p className={`${roboto.className} text-gray-700 leading-relaxed text-justify`}>
           MV The Crown is a state-of-the-art luxury cruise ship offering an unparalleled sea journey along the stunning coastlines of Bangladesh. Designed with sophistication in mind, The Crown features lavish suites, world-class dining, panoramic decks, and exclusive lounge areas — redefining ocean travel for the modern explorer.
           <br /><br />
           Whether you are planning a romantic getaway, a corporate retreat, or a weekend escape, MV The Crown ensures a regal experience from the moment you step on board. Sail between Cox’s Bazar and Saint Martin in royal style and comfort, and let every wave tell a story of elegance and adventure.
         </p>
-        <button className="bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300">
+        <button style={{
+          background: 'linear-gradient(90deg, #313881, #0678B4)',
+        }} className="bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300">
           Book Your Cruise
         </button>
       </div>

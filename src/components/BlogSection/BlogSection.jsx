@@ -4,7 +4,7 @@ import blogPosts from "@/data/blogPosts";
 
 const BlogSection = () => {
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 ">
       <h2 className="text-4xl font-bold text-center text-red-700 mb-10">Blog</h2>
       <div className="container mx-auto px-4">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
