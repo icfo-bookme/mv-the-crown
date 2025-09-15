@@ -18,18 +18,18 @@ export default function ContactUs() {
         subtitle=""
        heightClass=" h-[35vh] lg:h-[95vh]"
       />
-      <section className="bg-white min-h-screen py-10 px-6">
+      <section className="bg-white min-h-screen py-10 ">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
             Contact Us
           </h1>
-          <p className="text-center text-gray-500 mb-10">
+          <p className="text-center px-6 text-gray-500 mb-10">
             Reach out to MV The Crown – we are here to help you with inquiries, bookings, and support.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-10 bg-gray-50 p-8 rounded-lg shadow-md">
+          <div className="grid md:grid-cols-2 gap-10 bg-gray-50 py-8 rounded-lg shadow-md">
             {/* Address */}
-            <div className="space-y-6">
+            <div className="space-y-6 px-8">
               <div className="flex items-start gap-4">
                 <FaMapMarkerAlt className="text-red-600 text-xl mt-1" />
                 <div>
@@ -91,7 +91,7 @@ export default function ContactUs() {
             </div>
 
             {/* Optional: Contact Form */}
-            <div>
+            <div className="px-3">
               <ContactForm title="show" />
             </div>
           </div>
