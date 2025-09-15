@@ -33,7 +33,7 @@ const BookMeHeader = () => {
   // Mobile menu component
   const MobileMenu = () => {
     return (
-      <div className="h-full flex flex-col overflow-hidden">
+      <div className={`${roboto.className} h-full flex flex-col overflow-hidden`}>
         {/* Menu Header */}
         <div className="flex justify-between p-4 border-b border-gray-200">
           <Link href="/" prefetch onClick={closeAllMenus}>
@@ -202,10 +202,10 @@ const BookMeHeader = () => {
               <div className="hidden lg:flex items-center gap-6">
                 <Link
                   href="/"
-                  className={`text-sm font-medium transition-colors duration-200 ${
+                  className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/")
-                      ? "text-white border-b-2 border-red-100"
-                      : "text-white hover:text-blue-100"
+                      ? "text-white font-bold border-b-2 border-red-100"
+                      : "hover:text-white text-blue-100"
                   }`}
                   prefetch
                 >
@@ -214,10 +214,10 @@ const BookMeHeader = () => {
 
                 <Link
                   href="/schedule"
-                  className={`text-sm font-medium transition-colors duration-200 ${
+                  className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/schedule")
                       ? "text-white border-b-2 border-red-100"
-                      : "text-white hover:text-blue-100"
+                      : "hover:text-white text-blue-100"
                   }`}
                   prefetch
                 >
@@ -226,10 +226,10 @@ const BookMeHeader = () => {
 
                 <Link
                   href="/ticket"
-                  className={`text-sm font-medium transition-colors duration-200 ${
+                  className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/ticket")
                       ? "text-white border-b-2 border-red-100"
-                      : "text-white hover:text-blue-100"
+                      : "hover:text-white text-blue-100"
                   }`}
                   prefetch
                 >
@@ -238,10 +238,10 @@ const BookMeHeader = () => {
 
                 <Link
                   href="/payment"
-                  className={`text-sm font-medium transition-colors duration-200 ${
+                  className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/payment")
                       ? "text-white border-b-2 border-red-100"
-                      : "text-white hover:text-blue-100"
+                      : "hover:text-white text-blue-100"
                   }`}
                   prefetch
                 >
@@ -250,10 +250,10 @@ const BookMeHeader = () => {
 
                 <Link
                   href="/contact"
-                  className={`text-sm font-medium transition-colors duration-200 ${
+                  className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/contact")
-                      ? "text-white border-b-2 border-red-100"
-                      : "text-white hover:text-blue-100"
+                      ? "text-white border-b-2  border-red-100"
+                      : "hover:text-white text-blue-100"
                   }`}
                   prefetch
                 >
