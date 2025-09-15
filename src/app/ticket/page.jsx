@@ -7,7 +7,7 @@ import getPackages from "@/lib/getPackages";
 export default async function Page() {
     const packages = await getPackages(264);
   return (
-    <div className="pt-0">
+    <div className="pt-0 bg-gray-50">
         <Banner
           imageUrl="/10.jpg"
           title="Ticket Booking"

@@ -69,7 +69,7 @@ export default function Schedules({ schedules }) {
     return (
         <div>
             {/* Header */}
-            <div className="px-4 sm:px-6 py-10 border-b border-gray-200 text-center">
+            <div className="px-4 bg-gray-50 sm:px-6 py-10 border-b border-gray-200 text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-950">
                     Upcoming Schedule Of <span className="text-red-600">MV The Crown</span>
                 </h2>
@@ -100,7 +100,7 @@ export default function Schedules({ schedules }) {
                 </div>
 
                 {/* Schedule Table */}
-                <div className="p-4 sm:p-6 w-full">
+                <div className="p-4 bg-gray-50 sm:p-6 w-full">
                     {Object.entries(schedules).map(([month, monthSchedules]) => (
                         <div key={month} className={`${activeMonth === month ? 'block' : 'hidden'}`}>
                             <table className="w-full table-auto divide-y divide-gray-200">
