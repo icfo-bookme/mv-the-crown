@@ -216,7 +216,7 @@ const BookMeHeader = () => {
                   href="/schedule"
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActiveLink("/schedule")
-                      ? "text-white border-b-2 border-blue-600"
+                      ? "text-white border-b-2 border-red-100"
                       : "text-white hover:text-blue-100"
                   }`}
                   prefetch
@@ -228,7 +228,7 @@ const BookMeHeader = () => {
                   href="/ticket"
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActiveLink("/ticket")
-                      ? "text-white border-b-2 border-blue-600"
+                      ? "text-white border-b-2 border-red-100"
                       : "text-white hover:text-blue-100"
                   }`}
                   prefetch
@@ -240,7 +240,7 @@ const BookMeHeader = () => {
                   href="/payment"
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActiveLink("/payment")
-                      ? "text-white border-b-2 border-blue-600"
+                      ? "text-white border-b-2 border-red-100"
                       : "text-white hover:text-blue-100"
                   }`}
                   prefetch
@@ -252,7 +252,7 @@ const BookMeHeader = () => {
                   href="/contact"
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActiveLink("/contact")
-                      ? "text-white border-b-2 border-blue-600"
+                      ? "text-white border-b-2 border-red-100"
                       : "text-white hover:text-blue-100"
                   }`}
                   prefetch
