@@ -100,7 +100,7 @@ export default function Schedules({ schedules }) {
                 </div>
 
                 {/* Schedule Table */}
-                <div className="p-4 bg-gray-50 sm:p-6 w-full">
+                <div className="p-4  sm:p-6 w-full">
                     {Object.entries(schedules).map(([month, monthSchedules]) => (
                         <div key={month} className={`${activeMonth === month ? 'block' : 'hidden'}`}>
                             <table className="w-full table-auto divide-y divide-gray-200">

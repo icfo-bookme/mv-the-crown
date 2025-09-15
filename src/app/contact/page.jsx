@@ -16,7 +16,7 @@ export default function ContactUs() {
         imageUrl="/10.jpg"
         title="Contact Us"
         subtitle=""
-       heightClass=" h-[35vh] lg:h-[95vh]"
+       heightClass=" h-[35vh] lg:h-[70vh]"
       />
       <section className="bg-white min-h-screen py-10 ">
         <div className="max-w-5xl mx-auto">

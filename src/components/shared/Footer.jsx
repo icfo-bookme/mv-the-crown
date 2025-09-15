@@ -11,8 +11,16 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-12 pb-8">
-      <div className="container mx-auto px-4">
+    <footer className="relative bg-gray-900 text-white pt-12 pb-8 overflow-hidden">
+      {/* Background image with 60% opacity */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-black opacity-10"
+        style={{ backgroundImage: `url('/footer.jpg')` }}
+        aria-hidden="true"
+      ></div>
+
+      {/* Content wrapper - relative so it stacks above the bg image */}
+      <div className="relative container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
@@ -46,7 +54,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Your email address"
-                  className="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full"
+                  className="px-4 py-2 bg-gray-800 border border-red-100 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full"
                 />
                 <button className="bg-blue-950 hover:bg-yellow-600 text-gray-50 border border-gray-500 font-semibold px-4 py-2 rounded-r-lg transition">
                   Subscribe

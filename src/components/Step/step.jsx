@@ -29,7 +29,7 @@ const steps = [
 export default function StepProcess() {
     return (
         <div className="pb-16">
-            <div className="flex justify-center  pt-16 pb-4">
+            <div className="flex justify-center pt-8  md:pt-16 pb-4">
                 <Image
                     src={termsIcon}
                     alt="Terms & Conditions"

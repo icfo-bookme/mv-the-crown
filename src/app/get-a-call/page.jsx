@@ -9,7 +9,7 @@ export default function Page() {
         imageUrl="/10.jpg"
         title="Get A Call"
         subtitle=""
-        heightClass=" h-[35vh] lg:h-[95vh]"
+        heightClass=" h-[35vh] lg:h-[70vh]"
       />
 
       <section className="bg-white min-h-screen py-10 px-6">

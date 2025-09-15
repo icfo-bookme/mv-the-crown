@@ -22,7 +22,7 @@ const BlogSection = () => {
                 />
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
+                <h3 className="text-xl text-gray-950 font-semibold mb-2">{post.title}</h3>
                 <p className="text-gray-700 text-sm mb-4">{post.description.slice(0, 100)}...</p>
                 <Link href={`/blog/${post.slug}`}>
                   <button className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800 transition">

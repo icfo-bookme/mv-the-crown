@@ -8,7 +8,7 @@ export default function Page() {
         imageUrl="/10.jpg"
         title="Payment Methods"
         subtitle=""
-        heightClass=" h-[35vh] lg:h-[95vh]"
+        heightClass=" h-[35vh] lg:h-[70vh]"
       />
         
       <PaymentMethods />
