@@ -7,7 +7,7 @@ export default async function Page() {
      const schedules = await getSchedules(264);
 
   return (
-    <div className="pt-0">
+    <div className="pt-0 bg-gray-50">
        <Banner
           imageUrl="/10.jpg"
           title="Schedules"
