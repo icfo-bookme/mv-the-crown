@@ -54,7 +54,7 @@ const ContactForm = ({ title }) => {
     return (
         <div style={{
             boxShadow: 'inset 0 4px 8px rgba(67, 56, 202, 0.4)' // Tailwind's indigo-700 as rgba
-        }} className="max-w-lg mx-auto  p-8 bg-white rounded-2xl shadow-xl border border-gray-100">
+        }} className="md:max-w-lg w-full mx-auto  p-8 bg-white rounded-2xl shadow-xl border border-gray-100">
             <ToastContainer
                 position="top-right"
                 autoClose={3000}
