@@ -178,8 +178,8 @@ const BookMeHeader = () => {
   };
 
   return (
-    <header className={`header-area-three ${roboto.className} `}>
-      <div className="main-header absolute w-full z-50  shadow-md shadow-slate-500">
+    <header className={`header-area-three bg-white md:bg-transparent ${roboto.className} `}>
+      <div className="main-header fixed md:absolute w-full z-50 bg-white md:bg-transparent  shadow-md shadow-slate-500">
         <div className="header-bottom text-[#00026E]">
           <div className="container w-[95%] lg:w-[84%] mx-auto">
             <div className="flex justify-between items-center py-2">
@@ -193,7 +193,7 @@ const BookMeHeader = () => {
                     className="changeLogo"
                     priority
                   />
-                  <span className="text-2xl italic font-bold text-white">Mv The crown</span>
+                  <span className="text-2xl italic font-bold text-gray-950 md:text-white">Mv The crown</span>
                 </Link>
               </div>
 
@@ -316,7 +316,7 @@ const BookMeHeader = () => {
 
                 <button
                   onClick={toggleMobileMenu}
-                  className="text-white focus:outline-none"
+                  className="text-[#00026E] focus:outline-none"
                   aria-label="Toggle menu"
                 >
                   {isMobileMenuOpen ? (
