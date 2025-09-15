@@ -25,6 +25,7 @@ export default function CruisePromo() {
           <br /><br />
           Whether you are planning a romantic getaway, a corporate retreat, or a weekend escape, MV The Crown ensures a regal experience from the moment you step on board. Sail between Cox’s Bazar and Saint Martin in royal style and comfort, and let every wave tell a story of elegance and adventure.
         </p>
+        Li
         <button style={{
           background: 'linear-gradient(90deg, #313881, #0678B4)',
         }} className="bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300">

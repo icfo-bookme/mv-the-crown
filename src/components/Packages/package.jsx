@@ -190,7 +190,7 @@ export default function Packages({ packages }) {
                                                         </span>
                                                     </div>
 
-                                                    <div className="flex flex-wrap gap-3 mb-4 text-sm text-gray-600">
+                                                    <div className="flex flex-wrap gap-3 mb-4 text-sm text-gray-900">
                                                         <span><strong className="mr-1">Capacity:</strong> {pkg.person_allowed} persons</span>
                                                         <span className="text-blue-950">•</span>
                                                         <span><strong className="mr-1">Extra Bed:</strong> {pkg.additionalbed}</span>
