@@ -3,12 +3,10 @@
 import "./globals.css";
 import Header from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-import { Prata } from "next/font/google";
+import { Inter } from "next/font/google";
 
-// Correct usage of Prata font
-const prata = Prata({
+const inter = Inter({
   subsets: ["latin"],
-  weight: "400",
   display: "swap",
 });
 
@@ -20,8 +18,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* Apply Prata font using className */}
-      <body className={`${prata.className} antialiased`}>
+      {/* Apply Inter font using className */}
+      <body className={`${inter.className} antialiased`}>
         <Header />
         {children}
         <Footer />

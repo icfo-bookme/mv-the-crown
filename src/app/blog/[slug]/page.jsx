@@ -1,3 +1,4 @@
+import Banner from "@/components/ui/Banner";
 import blogPosts from "@/data/blogPosts";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -14,18 +15,25 @@ export default function BlogDetailPage({ params }) {
   if (!post) return notFound();
 
   return (
-    <section className="py-24 px-4 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-4">{post.title}</h1>
-      <p className="text-center text-gray-600 text-lg mb-6">{post.subtitle}</p>
-      <div className="relative w-full h-96 mb-6">
-        <Image
-          src={post.image}
-          alt={post.title}
-          fill
-          className="object-cover rounded-md"
-        />
-      </div>
-      <p className="text-gray-800 text-lg leading-relaxed">{post.description}</p>
-    </section>
+    <>
+    <Banner
+        imageUrl="/10.jpg"
+        title="Blog Details"
+        subtitle=""
+        heightClass=" h-[35vh] lg:h-[95vh]"
+      />
+      <section className="py-10 px-4 max-w-4xl mx-auto">
+        <h1 className="text-4xl font-bold text-center mb-4">{post.title}</h1>
+        <p className="text-center text-gray-600 text-lg mb-6">{post.subtitle}</p>
+        <div className="relative w-full h-96 mb-6">
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+        <p className="text-gray-800 text-lg leading-relaxed">{post.description}</p>
+      </section></>
   );
 }

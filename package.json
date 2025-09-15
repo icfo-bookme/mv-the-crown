@@ -13,7 +13,7 @@
     "react-loader-spinner": "^6.1.6",
     "react-lottie": "^1.2.10",
     "react-phone-input-2": "^2.15.1",
-    "react-toastify": "^11.0.3",
+    "react-toastify": "^11.0.5",
     "swiper": "^8.4.7",
     "tailwindcss-pseudo-elements": "^2.0.0"
   },

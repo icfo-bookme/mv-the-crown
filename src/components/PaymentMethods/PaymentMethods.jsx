@@ -45,7 +45,7 @@ const PaymentMethods = () => {
   ];
 
   return (
-    <section className=" py-10 px-4 sm:px-6 lg:px-8">
+    <section className=" max-w-6xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-semibold text-gray-800 mb-2">
           Payment Method For <span className="text-red-600">MV The Crown</span>
@@ -56,7 +56,15 @@ const PaymentMethods = () => {
 
         <div className={`grid ${roboto.className} grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6`}>
           {paymentOptions.map((option, idx) => (
-            <div key={idx} className="bg-gray-50 rounded-lg shadow-md p-6 text-left hover:shadow-lg transition duration-200">
+            <div style={{
+              boxShadow: `
+    inset 0 4px 8px rgba(67, 56, 202, 0.1),   /* top */
+    inset 0 -4px 8px rgba(67, 56, 202, 0.1),  /* bottom */
+    inset 4px 0 8px rgba(67, 56, 202, 0.1),   /* left */
+    inset -4px 0 8px rgba(67, 56, 202, 0.1)   /* right */
+  `
+            }}
+              key={idx} className="bg-gray-50 rounded-lg shadow-md p-6 text-left hover:shadow-lg transition duration-200">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">{option.title}</h3>
               {option.serviceCharge && (
                 <p className="text-sm text-gray-600 mb-4">For {option.title} payment {option.serviceCharge}</p>

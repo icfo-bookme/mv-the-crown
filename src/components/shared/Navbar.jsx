@@ -178,8 +178,8 @@ const BookMeHeader = () => {
   };
 
   return (
-    <header className={`header-area-three ${roboto.className} bg-white`}>
-      <div className="main-header fixed  w-full z-50 bg-white shadow-md shadow-slate-500">
+    <header className={`header-area-three ${roboto.className} `}>
+      <div className="main-header absolute w-full z-50  shadow-md shadow-slate-500">
         <div className="header-bottom text-[#00026E]">
           <div className="container w-[95%] lg:w-[84%] mx-auto">
             <div className="flex justify-between items-center py-2">
@@ -193,7 +193,7 @@ const BookMeHeader = () => {
                     className="changeLogo"
                     priority
                   />
-                  <span className="text-2xl italic font-bold text-[#010127]">Mv The crown</span>
+                  <span className="text-2xl italic font-bold text-white">Mv The crown</span>
                 </Link>
               </div>
 
@@ -204,8 +204,8 @@ const BookMeHeader = () => {
                   href="/"
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActiveLink("/")
-                      ? "text-blue-600 border-b-2 border-blue-600"
-                      : "text-[#00026E] hover:text-blue-600"
+                      ? "text-white border-b-2 border-red-100"
+                      : "text-white hover:text-blue-100"
                   }`}
                   prefetch
                 >
@@ -216,8 +216,8 @@ const BookMeHeader = () => {
                   href="/schedule"
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActiveLink("/schedule")
-                      ? "text-blue-600 border-b-2 border-blue-600"
-                      : "text-[#00026E] hover:text-blue-600"
+                      ? "text-white border-b-2 border-blue-600"
+                      : "text-white hover:text-blue-100"
                   }`}
                   prefetch
                 >
@@ -228,8 +228,8 @@ const BookMeHeader = () => {
                   href="/ticket"
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActiveLink("/ticket")
-                      ? "text-blue-600 border-b-2 border-blue-600"
-                      : "text-[#00026E] hover:text-blue-600"
+                      ? "text-white border-b-2 border-blue-600"
+                      : "text-white hover:text-blue-100"
                   }`}
                   prefetch
                 >
@@ -240,8 +240,8 @@ const BookMeHeader = () => {
                   href="/payment"
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActiveLink("/payment")
-                      ? "text-blue-600 border-b-2 border-blue-600"
-                      : "text-[#00026E] hover:text-blue-600"
+                      ? "text-white border-b-2 border-blue-600"
+                      : "text-white hover:text-blue-100"
                   }`}
                   prefetch
                 >
@@ -252,8 +252,8 @@ const BookMeHeader = () => {
                   href="/contact"
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActiveLink("/contact")
-                      ? "text-blue-600 border-b-2 border-blue-600"
-                      : "text-[#00026E] hover:text-blue-600"
+                      ? "text-white border-b-2 border-blue-600"
+                      : "text-white hover:text-blue-100"
                   }`}
                   prefetch
                 >
@@ -284,9 +284,9 @@ const BookMeHeader = () => {
                   </a>
 
                   <div>
-                    <p className="text-sm text-gray-900">Call Anytime</p>
+                    <p className="text-sm text-white">Call Anytime</p>
                     <h4 className="text-lg font-semibold">
-                      <a href="tel:01923239293" className="text-gray-800">
+                      <a href="tel:01923239293" className="text-white">
                         01923239293
                       </a>
                     </h4>
@@ -295,7 +295,7 @@ const BookMeHeader = () => {
               </div>
 
               {/* Mobile Menu Button and Icons */}
-              <div className="lg:hidden flex items-center gap-4">
+              <div className="lg:hidden  flex items-center gap-4">
                 <div className="flex items-center gap-2">
                   <a href="tel:01923239293" className="w-[38px] h-[38px]">
                     <div className="phone-call w-[36px] h-[36px]">
@@ -316,7 +316,7 @@ const BookMeHeader = () => {
 
                 <button
                   onClick={toggleMobileMenu}
-                  className="text-[#00026E] focus:outline-none"
+                  className="text-white focus:outline-none"
                   aria-label="Toggle menu"
                 >
                   {isMobileMenuOpen ? (

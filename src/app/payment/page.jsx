@@ -3,12 +3,14 @@ import Banner from "@/components/ui/Banner";
 
 export default function Page() {
   return (
-    <div className="pt-16">
-          <Banner
-          imageUrl="/default_banner.jpg"
-          title="Payment Methods for MV The Crown"
-          subtitle="Khulna - Sundarbans - Khulna"
-        /> 
+    <div className="pt-0">
+      <Banner
+        imageUrl="/10.jpg"
+        title="Payment Methods"
+        subtitle=""
+        heightClass=" h-[35vh] lg:h-[95vh]"
+      />
+        
       <PaymentMethods />
     </div>
   )

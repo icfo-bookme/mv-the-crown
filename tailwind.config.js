@@ -22,6 +22,16 @@ module.exports = {
       fontFamily: {
         heading: ['heading',],
       },
+       keyframes: {
+        'shake-vertical': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '25%': { transform: 'translateY(-4px)' },
+          '75%': { transform: 'translateY(4px)' },
+        },
+      },
+      animation: {
+        'shake-vertical': 'shake-vertical 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Roboto } from 'next/font/google';
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
-
+import termsIcon from "../../../public/icons/payment-process.png";
 const steps = [
     {
         title: "Step: 1",
@@ -28,15 +28,31 @@ const steps = [
 
 export default function StepProcess() {
     return (
-        <div>
-            <h4 className="text-3xl text-center text-gray-950  py-8 lg:text-3xl font-bold mb-4">
+        <div className="pb-16">
+            <div className="flex justify-center  pt-16 pb-4">
+                <Image
+                    src={termsIcon}
+                    alt="Terms & Conditions"
+                    width={50}
+                    height={50}
+                    className="object-contain animate-shake-vertical"
+                />
+            </div>
+
+            <h4 className="text-3xl  text-center text-gray-950   lg:text-3xl font-bold mb-12">
                 Ticket Booking <span className="text-red-700">Process</span>
             </h4>
 
             <div className={`${roboto.className} flex  items-center flex-row md:justify-center md:gap-24`}>
                 {steps.map((step, index) => (
                     <div key={index} className="flex flex-col items-center text-center relative">
-                        <div className="bg-gray-100 p-4 rounded-full mb-4 shadow-md w-14 h-14 md:w-24 md:h-24 flex items-center justify-center">
+                        <div
+                            className="bg-gray-100 shadow-inner p-4 rounded-full mb-4 w-14 h-14 md:w-24 md:h-24 flex items-center justify-center"
+                            style={{
+                                boxShadow: 'inset 0 4px 8px rgba(67, 56, 202, 0.4)' // Tailwind's indigo-700 as rgba
+                            }}
+                        >
+
                             <Image
                                 src={step.icon}
                                 alt={step.description}

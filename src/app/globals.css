@@ -50,6 +50,20 @@ body {
 	padding: 10px;
 	border: 1px solid #ddd;
   } */
+
+@keyframes bgPulse {
+  0%, 100% {
+    background-color: white;
+  }
+  50% {
+    background-color: #dfe4eb; /* Tailwind's blue-200 */
+  }
+}
+
+.bg-animate {
+  animation: bgPulse 10s ease-in-out infinite;
+}
+
 @font-face {
   font-family: 'heading';
   src: url('/fonts/LuxiaRegular.ttf') format('ttf');

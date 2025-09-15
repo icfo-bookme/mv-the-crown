@@ -17,12 +17,13 @@ export default async function Home() {
   const schedules = await getSchedules(264);
   const images = await getPropertyImages(264);
   return (
-    <main className="bg-blue-100">
+    <main className="bg-gray-50">
       <div>
         <Banner
-          imageUrl="/default_banner.jpg"
+          imageUrl="/10.jpg"
           title="Luxury River Cruises from Khulna"
           subtitle="Khulna - Sundarbans - Khulna"
+          heightClass=" h-[35vh] lg:h-[95vh]"
         /> 
         <StepProcess />
         <Packages packages={packages} />
