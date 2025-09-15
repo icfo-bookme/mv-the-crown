@@ -119,7 +119,7 @@ export default function Schedules({ schedules }) {
                                 </thead>
                                 <tbody>
                                     {monthSchedules.map((schedule) => (
-                                        <tr key={schedule.id} className="hover:bg-gray-50 border border-gray-300 text-center text-sm sm:text-base">
+                                        <tr key={schedule.id} className="hover:bg-gray-50 border border-gray-300 text-center text-sm text-black">
                                             <td className="px-2 py-3">{formatDate(schedule.depart_date)}</td>
                                             <td className="px-2 py-3">{formatTime(schedule.depart_time)}</td>
                                             <td className="px-2 py-3">{formatDate(schedule.return_date)}</td>

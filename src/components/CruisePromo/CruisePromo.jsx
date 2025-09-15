@@ -6,7 +6,7 @@ import { Roboto } from 'next/font/google';
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
 export default function CruisePromo() {
   return (
-    <section className=" max-w-6xl mx-auto  text-gray-900 px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-10">
+    <section className=" max-w-6xl mx-auto  text-gray-900 px-6 py-12 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
       {/* Text Section */}
       <div className="md:w-1/2 space-y-5">
         <h2 className="text-3xl md:text-4xl font-semibold leading-snug">
