@@ -205,7 +205,7 @@ const BookMeHeader = () => {
                   className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/")
                       ? "text-white font-bold border-b-2 border-red-100"
-                      : "hover:text-white text-blue-100"
+                      : "hover:text-white text-white"
                   }`}
                   prefetch
                 >
@@ -217,7 +217,7 @@ const BookMeHeader = () => {
                   className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/schedule")
                       ? "text-white border-b-2 border-red-100"
-                      : "hover:text-white text-blue-100"
+                      : "hover:text-white text-white"
                   }`}
                   prefetch
                 >
@@ -229,7 +229,7 @@ const BookMeHeader = () => {
                   className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/ticket")
                       ? "text-white border-b-2 border-red-100"
-                      : "hover:text-white text-blue-100"
+                      : "hover:text-white text-white"
                   }`}
                   prefetch
                 >
@@ -241,7 +241,7 @@ const BookMeHeader = () => {
                   className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/payment")
                       ? "text-white border-b-2 border-red-100"
-                      : "hover:text-white text-blue-100"
+                      : "hover:text-white text-white"
                   }`}
                   prefetch
                 >
@@ -253,7 +253,7 @@ const BookMeHeader = () => {
                   className={`text-sm font-semibold transition-colors duration-200 ${
                     isActiveLink("/contact")
                       ? "text-white border-b-2  border-red-100"
-                      : "hover:text-white text-blue-100"
+                      : "hover:text-white text-white"
                   }`}
                   prefetch
                 >
