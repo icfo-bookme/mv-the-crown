@@ -200,7 +200,7 @@ export default function Packages({ packages }) {
 
                                                     {pkg.description && (
                                                         <div className="mb-2">
-                                                            <p className="text-gray-600">
+                                                            <p className="text-gray-900">
                                                                 {truncateText(pkg.description)}
                                                                 <button
                                                                     onClick={() => openModal(pkg.description)}
