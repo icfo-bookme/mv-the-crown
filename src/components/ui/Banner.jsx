@@ -31,7 +31,7 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
       <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-blue-500/20 to-transparent z-10"></div>
 
       {/* Content */}
-      <div className="absolute inset-0 mt-14 md:mt-16 flex items-center lg:items-center pb-6 lg:pb-0 px-4 md:px-8 z-20">
+      <div className="absolute inset-0 mt-12 md:mt-16 flex items-center lg:items-center pb-6 lg:pb-0 px-4 md:px-8 z-20">
         <div className={`text-white mt-10 w-full max-w-6xl mx-auto space-y-3 md:space-y-6 text-left `}>
           {/* Ship Name */}
           {ship && (
