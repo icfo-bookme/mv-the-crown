@@ -24,7 +24,7 @@ export default async function Home() {
           ship="MV The Crown,"
           title="Luxury River Cruises from Khulna"
           subtitle="Khulna - Sundarbans - Khulna"
-          heightClass=" h-[45vh] lg:h-[95vh]"
+          heightClass=" h-[60vh] lg:h-[95vh]"
         /> 
         <StepProcess />
         <Packages packages={packages} />

@@ -261,7 +261,7 @@ const BookMeHeader = () => {
 
   return (
     <header className={`header-area-three bg-white md:bg-transparent ${roboto.className} `}>
-      <div className="main-header fixed md:absolute w-full z-50 bg-transparent  ">
+      <div className="main-header absolute w-full z-50 bg-transparent  ">
         <div className="header-bottom text-[#00026E]">
           <div className="container w-[95%] lg:w-[84%] mx-auto">
             <div className="flex justify-between items-center py-2">
