@@ -1,25 +1,54 @@
 "use client";
 
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useRef, useCallback, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Roboto } from "next/font/google";
-import { FaPhone, FaWhatsapp, FaBars, FaTimes, FaChevronRight } from "react-icons/fa";
+import { 
+  FaPhone, 
+  FaWhatsapp, 
+  FaBars, 
+  FaTimes, 
+  FaChevronRight, 
+  FaChevronDown,
+  FaShip 
+} from "react-icons/fa";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400"] });
 
 const BookMeHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isShipsDropdownOpen, setIsShipsDropdownOpen] = useState(false);
   const mobileMenuRef = useRef(null);
-  const pathname = usePathname(); // Get current path
+  const shipsDropdownRef = useRef(null);
+  const pathname = usePathname();
 
   const toggleMobileMenu = useCallback(() => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   }, [isMobileMenuOpen]);
 
+  const toggleShipsDropdown = useCallback(() => {
+    setIsShipsDropdownOpen(!isShipsDropdownOpen);
+  }, [isShipsDropdownOpen]);
+
   const closeAllMenus = useCallback(() => {
     setIsMobileMenuOpen(false);
+    setIsShipsDropdownOpen(false);
+  }, []);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (shipsDropdownRef.current && !shipsDropdownRef.current.contains(event.target)) {
+        setIsShipsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   // Check if a link is active
@@ -123,6 +152,59 @@ const BookMeHeader = () => {
               </Link>
             </li>
 
+            {/* Other Ships Dropdown in Mobile Menu */}
+            <li>
+              <button
+                onClick={toggleShipsDropdown}
+                className="flex items-center justify-between w-full py-3 px-4 text-sm hover:bg-blue-50 rounded-lg transition-colors duration-200 group text-[#00026E]"
+              >
+                <span className="font-medium">Other Ships</span>
+                <FaChevronDown 
+                  className={`transition-transform ${isShipsDropdownOpen ? "rotate-180" : ""}`} 
+                />
+              </button>
+              
+              {isShipsDropdownOpen && (
+                <div className="mt-1 ml-4 pl-2 border-l-2 border-blue-100">
+                  <ul className="space-y-1">
+                    <li>
+                      <Link
+                        href="/ships/ship1"
+                        className="flex items-center py-2 px-4 text-sm text-[#00026E] hover:bg-blue-50 rounded-lg transition-colors duration-200"
+                        onClick={closeAllMenus}
+                        prefetch
+                      >
+                        <FaShip className="mr-2 text-blue-400" />
+                        <span>MV The Crown</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/ships/ship2"
+                        className="flex items-center py-2 px-4 text-sm text-[#00026E] hover:bg-blue-50 rounded-lg transition-colors duration-200"
+                        onClick={closeAllMenus}
+                        prefetch
+                      >
+                        <FaShip className="mr-2 text-blue-400" />
+                        <span>MV The Princess</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/ships/ship3"
+                        className="flex items-center py-2 px-4 text-sm text-[#00026E] hover:bg-blue-50 rounded-lg transition-colors duration-200"
+                        onClick={closeAllMenus}
+                        prefetch
+                      >
+                        <FaShip className="mr-2 text-blue-400" />
+                        <span>MV The Royal</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </li>
+
             <li>
               <Link
                 href="/contact"
@@ -179,7 +261,7 @@ const BookMeHeader = () => {
 
   return (
     <header className={`header-area-three bg-white md:bg-transparent ${roboto.className} `}>
-      <div className="main-header fixed md:absolute w-full z-50 bg-white md:bg-transparent  ">
+      <div className="main-header fixed md:absolute w-full z-50 bg-transparent  ">
         <div className="header-bottom text-[#00026E]">
           <div className="container w-[95%] lg:w-[84%] mx-auto">
             <div className="flex justify-between items-center py-2">
@@ -193,13 +275,11 @@ const BookMeHeader = () => {
                     className="changeLogo"
                     priority
                   />
-                  {/* <span className="text-2xl italic font-bold text-gray-950 md:text-white">Mv The crown</span> */}
                 </Link>
               </div>
 
-
               {/* Desktop Navigation */}
-              <div className="hidden lg:flex items-center gap-6">
+              <div className="hidden ml-10 lg:flex items-center gap-6">
                 <Link
                   href="/"
                   className={`text-sm font-semibold transition-colors duration-200 ${
@@ -247,6 +327,55 @@ const BookMeHeader = () => {
                 >
                   PAYMENT
                 </Link>
+
+                {/* Other Ships Dropdown for Desktop */}
+                <div className="relative" ref={shipsDropdownRef}>
+                  <button
+                    onClick={toggleShipsDropdown}
+                    className={`text-sm font-semibold transition-colors duration-200 flex items-center ${
+                      isShipsDropdownOpen
+                        ? "text-white border-b-2 border-red-100"
+                        : "hover:text-white text-white"
+                    }`}
+                  >
+                    OTHER SHIPS
+                    <FaChevronDown 
+                      className={`ml-1 transition-transform ${isShipsDropdownOpen ? "rotate-180" : ""}`} 
+                    />
+                  </button>
+                  
+                  {isShipsDropdownOpen && (
+                    <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
+                      <Link
+                        href="/ships/ship1"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 flex items-center"
+                        onClick={closeAllMenus}
+                        prefetch
+                      >
+                        <FaShip className="mr-2 text-blue-400" />
+                        MV The Crown
+                      </Link>
+                      <Link
+                        href="/ships/ship2"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 flex items-center"
+                        onClick={closeAllMenus}
+                        prefetch
+                      >
+                        <FaShip className="mr-2 text-blue-400" />
+                        MV The Princess
+                      </Link>
+                      <Link
+                        href="/ships/ship3"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 flex items-center"
+                        onClick={closeAllMenus}
+                        prefetch
+                      >
+                        <FaShip className="mr-2 text-blue-400" />
+                        MV The Royal
+                      </Link>
+                    </div>
+                  )}
+                </div>
 
                 <Link
                   href="/contact"
