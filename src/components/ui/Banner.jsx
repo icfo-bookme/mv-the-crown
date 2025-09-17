@@ -78,7 +78,7 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
           </div>
           <button
             onClick={() => window.location.href = 'tel:+880123456789'}
-            className={`${playfair.className} flex items-center justify-center bg-[#C70909] text-white font-medium px-4 py-2 rounded-3xl shadow-lg hover:bg-black/20 transition-all duration-300 text-sm md:text-base`}
+            className={`${playfair.className} flex items-center justify-center bg-[#C70909] text-white font-medium px-4 py-2 rounded-3xl shadow-lg hover:bg-white hover:text-red-800 transition-all duration-300 text-sm md:text-base`}
           >
             <Image
               src="/whatsapp.png"
