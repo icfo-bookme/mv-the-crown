@@ -64,7 +64,7 @@ const BookMeHeader = () => {
     return (
       <div className={`${roboto.className} h-full flex flex-col overflow-hidden`}>
         {/* Menu Header */}
-        <div className="flex justify-between p-4 border-b border-gray-200">
+        <div className="flex justify-between p-4 border-b bg-gray-700 border-gray-200">
           <Link href="/" prefetch onClick={closeAllMenus}>
             <Image
               src="/logo1.png"
@@ -445,7 +445,7 @@ const BookMeHeader = () => {
 
                 <button
                   onClick={toggleMobileMenu}
-                  className="text-[#00026E] focus:outline-none"
+                  className="text-[#f9f9fc] focus:outline-none"
                   aria-label="Toggle menu"
                 >
                   {isMobileMenuOpen ? (
