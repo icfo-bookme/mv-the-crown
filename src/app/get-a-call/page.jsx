@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <div>
       <Banner
-        imageUrl="/10.jpg"
+        imageUrl="/13.png"
         title="Get A Call"
         subtitle=""
         heightClass=" h-[35vh] lg:h-[70vh]"

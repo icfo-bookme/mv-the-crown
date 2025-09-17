@@ -17,7 +17,7 @@ export default function BlogDetailPage({ params }) {
   return (
     <>
     <Banner
-        imageUrl="/10.jpg"
+        imageUrl="/13.png"
         title="Blog Details"
         subtitle=""
         heightClass=" h-[35vh] lg:h-[70vh]"

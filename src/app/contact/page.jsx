@@ -13,7 +13,7 @@ export default function ContactUs() {
   return (
     <>
       <Banner
-        imageUrl="/10.jpg"
+       imageUrl="/13.png"
         title="Contact Us"
         subtitle=""
        heightClass=" h-[35vh] lg:h-[70vh]"

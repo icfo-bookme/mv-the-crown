@@ -9,7 +9,7 @@ export default async function Page() {
   return (
     <div className="pt-0 bg-gray-50">
        <Banner
-          imageUrl="/10.jpg"
+          imageUrl="/13.png"
           title="Schedules"
           subtitle=""
           heightClass=" h-[35vh] lg:h-[70vh]"
