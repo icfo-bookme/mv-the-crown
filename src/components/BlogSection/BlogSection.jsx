@@ -1,10 +1,9 @@
-import Link from "next/link";
 import Image from "next/image";
 import blogPosts from "@/data/blogPosts";
 
 const BlogSection = () => {
   return (
-    <section className="py-12 ">
+    <section className="py-12">
       <h2 className="text-4xl font-bold text-center text-red-700 mb-10">Blog</h2>
       <div className="container mx-auto px-4">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -23,12 +22,9 @@ const BlogSection = () => {
               </div>
               <div className="p-5">
                 <h3 className="text-xl text-gray-950 font-semibold mb-2">{post.title}</h3>
-                <p className="text-gray-700 text-sm mb-4">{post.description.slice(0, 100)}...</p>
-                <Link href={`/blog/${post.slug}`}>
-                  <button className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800 transition">
-                    Read More
-                  </button>
-                </Link>
+                <p className="text-gray-700 text-sm whitespace-pre-line">
+                  {post.description}
+                </p>
               </div>
             </div>
           ))}

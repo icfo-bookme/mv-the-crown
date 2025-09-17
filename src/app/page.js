@@ -20,7 +20,8 @@ export default async function Home() {
     <main className="bg-gray-50">
       <div>
         <Banner
-          imageUrl="/10.jpg"
+          imageUrl="/13.png"
+          ship="MV The Crown,"
           title="Luxury River Cruises from Khulna"
           subtitle="Khulna - Sundarbans - Khulna"
           heightClass=" h-[45vh] lg:h-[95vh]"

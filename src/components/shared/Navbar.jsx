@@ -38,7 +38,7 @@ const BookMeHeader = () => {
         <div className="flex justify-between p-4 border-b border-gray-200">
           <Link href="/" prefetch onClick={closeAllMenus}>
             <Image
-              src="/assets/images/logo.jpg"
+              src="/logo1.png"
               alt="logo"
               width={120}
               height={50}
@@ -179,21 +179,21 @@ const BookMeHeader = () => {
 
   return (
     <header className={`header-area-three bg-white md:bg-transparent ${roboto.className} `}>
-      <div className="main-header fixed md:absolute w-full z-50 bg-white md:bg-transparent  shadow-md shadow-slate-500">
+      <div className="main-header fixed md:absolute w-full z-50 bg-white md:bg-transparent  ">
         <div className="header-bottom text-[#00026E]">
           <div className="container w-[95%] lg:w-[84%] mx-auto">
             <div className="flex justify-between items-center py-2">
               <div className="logo flex items-center space-x-2">
                 <Link href={"/"} prefetch className="flex items-center space-x-2 cursor-pointer">
                   <Image
-                    src="/assets/images/logo.png"
+                    src="/logo1.png"
                     alt="logo"
-                    width={50}
+                    width={120}
                     height={50}
                     className="changeLogo"
                     priority
                   />
-                  <span className="text-2xl italic font-bold text-gray-950 md:text-white">Mv The crown</span>
+                  {/* <span className="text-2xl italic font-bold text-gray-950 md:text-white">Mv The crown</span> */}
                 </Link>
               </div>
 

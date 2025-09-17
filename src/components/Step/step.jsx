@@ -1,7 +1,13 @@
 import Image from "next/image";
 import { Roboto } from 'next/font/google';
-
+import { Playfair_Display } from 'next/font/google';
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-playfair',
+  display: 'swap',
+});
 import termsIcon from "../../../public/icons/payment-process.png";
 const steps = [
     {
@@ -39,7 +45,7 @@ export default function StepProcess() {
                 />
             </div>
 
-            <h4 className="text-3xl  text-center text-gray-950   lg:text-3xl font-bold mb-12">
+            <h4 className="text-4xl   text-center text-gray-950   lg:text-3xl font-bold mb-12">
                 Ticket Booking <span className="text-red-700">Process</span>
             </h4>
 

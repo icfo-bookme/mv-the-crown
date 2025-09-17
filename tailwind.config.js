@@ -20,8 +20,9 @@ module.exports = {
         foreground: "var(--foreground)", 
       },
       fontFamily: {
-        heading: ['heading',],
+        luxia: ['Luxia', 'sans-serif'],
       },
+
        keyframes: {
         'shake-vertical': {
           '0%, 100%': { transform: 'translateY(0)' },

@@ -79,7 +79,7 @@ export default function Schedules({ schedules }) {
 
             {/* Schedule Section */}
             <div style={{
-                boxShadow: 'inset 0 4px 8px rgba(67, 56, 202, 0.4)' // Tailwind's indigo-700 as rgba
+                boxShadow: 'inset 0 4px 8px rgba(67, 56, 202, 0.4)'
             }} className={`bg-gray-100 ${roboto.className} rounded-lg shadow-md max-w-5xl mx-auto my-6 w-full`}>
                 {/* Month Tabs */}
                 <div className="border-b border-gray-200 overflow-x-auto">
@@ -109,7 +109,7 @@ export default function Schedules({ schedules }) {
                                         {['Departure', 'Time', 'Return', 'Time'].map((heading, index) => (
                                             <th
                                                 key={`${heading}-${index}`}
-                                                className="px-2 py-3 text-sm sm:text-base text-white bg-gradient-to-r from-[#313881] to-[#0678B4] uppercase text-center"
+                                                className="px-2 py-3 text-sm sm:text-base text-white bg-gradient-to-r from-[#565fc2] to-[#22a2ec] uppercase text-center"
                                             >
                                                 {heading}
                                             </th>
@@ -134,22 +134,21 @@ export default function Schedules({ schedules }) {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-row items-center justify-center gap-4 mt-6 mb-10 px-4">
+            <div className="flex flex-row items-center justify-center gap-4 mt-6 mb-10 ">
                 <button
-                    onClick={handleCall}
-                    className="flex items-center justify-center text-white px-5 py-3 rounded-lg text-sm sm:text-base shadow-md transition-colors"
                     style={{
                         background: 'linear-gradient(90deg, #313881, #0678B4)',
                     }}
+                    onClick={handleCall}
+                    className="flex items-center text-white px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow-md"
                 >
                     <FaPhoneAlt className="mr-2" />
                     Call Now
                 </button>
-
                 <PrimaryButton
                     onClick={handleWhatsApp}
                     style={{
-                        background: 'linear-gradient(90deg, #1B5E20, #43A047)',
+                        background: 'linear-gradient(90deg, #313881, #0678B4)',
                     }}
                     bgColor="bg-green-800"
                     hoverColor="hover:bg-green-600"

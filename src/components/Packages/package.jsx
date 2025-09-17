@@ -157,9 +157,16 @@ export default function Packages({ packages }) {
                                 const roundTripPrice = calculateDiscountPrice(pkg, true);
 
                                 return (
-                                    <div
+                                    <div style={{
+                                        boxShadow: `
+    inset 0 4px 8px rgba(67, 56, 202, 0.1),   /* top */
+    inset 0 -4px 8px rgba(67, 56, 202, 0.1),  /* bottom */
+    inset 4px 0 8px rgba(67, 56, 202, 0.1),   /* left */
+    inset -4px 0 8px rgba(67, 56, 202, 0.1)   /* right */
+  `
+                                    }}
                                         key={pkg.unit_id}
-                                        className="bg-white bg-animate rounded-xl shadow-md overflow-hidden border border-gray-200 transition-all hover:shadow-lg"
+                                        className="bg-white  rounded-xl shadow-md overflow-hidden border border-gray-200 transition-all hover:shadow-lg"
                                     >
 
 
@@ -225,11 +232,11 @@ export default function Packages({ packages }) {
                                                                 <div className="flex items-center">
                                                                     {hasDiscount && (
                                                                         <p className="text-sm text-gray-500 line-through mr-2">
-                                                                            ৳{Math.round(pkg.price)}
+                                                                            {Math.round(pkg.price)} TK
                                                                         </p>
                                                                     )}
                                                                     <p className="text-xl font-bold text-blue-950">
-                                                                        ৳{Math.round(singleTripPrice)}
+                                                                        {Math.round(singleTripPrice)} TK
                                                                     </p>
                                                                 </div>
                                                                 <p className="text-xs text-gray-500">Per person</p>
@@ -243,11 +250,11 @@ export default function Packages({ packages }) {
                                                                 <div className="flex items-center">
                                                                     {hasDiscount && (
                                                                         <p className="text-sm text-gray-500 line-through mr-2">
-                                                                            ৳{Math.round(pkg.round_trip_price)}
+                                                                            {Math.round(pkg.round_trip_price)} TK
                                                                         </p>
                                                                     )}
                                                                     <p className="text-xl font-bold text-blue-950">
-                                                                        ৳{Math.round(roundTripPrice)}
+                                                                        {Math.round(roundTripPrice)} TK
                                                                     </p>
                                                                 </div>
                                                                 <p className="text-xs text-gray-500">Per person</p>
@@ -268,8 +275,8 @@ export default function Packages({ packages }) {
                                                         </button>
 
                                                         <PrimaryButton
-                                                            style={{
-                                                                background: 'linear-gradient(90deg, #1B5E20, #43A047)',
+                                                           style={{
+                                                                background: 'linear-gradient(90deg, #313881, #0678B4)',
                                                             }}
                                                             onClick={handleWhatsApp}
                                                             bgColor="bg-green-800"
