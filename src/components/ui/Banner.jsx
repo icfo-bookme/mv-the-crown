@@ -35,7 +35,7 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
         <div className={`text-white mt-10 w-full max-w-6xl mx-auto space-y-3 md:space-y-6 text-left `}>
           {/* Ship Name */}
           {ship && (
-            <h2 className={`text-xl md:text-lg lg:text-4xl -mb-5 italic drop-shadow-md ${playfair.className}`}>
+            <h2 className={`text-xl md:text-lg lg:text-4xl md:-mb-5 -mb-3 italic drop-shadow-md ${playfair.className}`}>
               {ship}
             </h2>
           )}
