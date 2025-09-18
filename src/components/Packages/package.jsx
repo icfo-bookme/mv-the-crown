@@ -223,8 +223,8 @@ export default function Packages({ packages }) {
                                                 <hr className="my-4" />
 
                                                 {/* Pricing & Actions */}
-                                                <div className="flex flex-col sm:flex-row sm:items-center justify-between">
-                                                    <div className="mb-4 sm:mb-0 flex gap-4 flex-wrap">
+                                                <div className="flex flex-col sm:flex-row items-center justify-between">
+                                                    <div className="mb-4 sm:mb-0 flex gap-4 ">
                                                         {/* Single Trip */}
                                                         {singleTripPrice !== null && (
                                                             <div className="bg-blue-50 p-3 rounded-lg">
@@ -244,7 +244,7 @@ export default function Packages({ packages }) {
                                                         )}
 
                                                         {/* Round Trip */}
-                                                        {roundTripPrice !== null && (
+                                                        {roundTripPrice > 0 && (
                                                             <div className="bg-green-50 p-3 rounded-lg">
                                                                 <p className="text-sm text-gray-600 font-medium">Round Trip</p>
                                                                 <div className="flex items-center">
@@ -262,7 +262,7 @@ export default function Packages({ packages }) {
                                                         )}
                                                     </div>
 
-                                                    <div className="flex flex-wrap gap-3">
+                                                    <div className="flex gap-3">
                                                         <button
                                                             style={{
                                                                 background: 'linear-gradient(90deg, #313881, #0678B4)',
