@@ -29,7 +29,7 @@ export default function CruisePromo() {
         <Link href="/get-a-call">
           <button style={{
             background: 'linear-gradient(90deg, #313881, #0678B4)',
-          }} className="bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300">
+          }} className="bg-indigo-700 mt-3 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300">
             Start Booking
           </button>
         </Link>
