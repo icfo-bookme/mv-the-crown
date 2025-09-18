@@ -31,7 +31,7 @@ export default function ContactUs() {
             {/* Address */}
             <div className="space-y-6 px-8">
               <div className="flex items-start gap-4">
-                <FaMapMarkerAlt className="text-red-600 text-xl mt-1" />
+                <FaMapMarkerAlt className="text-blue-600 text-xl mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg text-gray-800">Office Address</h3>
                   <p className="text-gray-600">
@@ -43,7 +43,7 @@ export default function ContactUs() {
 
               {/* Phone */}
               <div className="flex items-start gap-4">
-                <FaPhoneAlt className="text-red-600 text-xl mt-1" />
+                <FaPhoneAlt className="text-blue-600 text-xl mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg text-gray-800">Phone</h3>
                   <p className="text-gray-600">
@@ -55,7 +55,7 @@ export default function ContactUs() {
 
               {/* Email */}
               <div className="flex items-start gap-4">
-                <FaEnvelope className="text-red-600 text-xl mt-1" />
+                <FaEnvelope className="text-blue-600 text-xl mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg text-gray-800">Email</h3>
                   <p className="text-gray-600">info.karnafulyexpress@gmail.com</p>
@@ -64,7 +64,7 @@ export default function ContactUs() {
 
               {/* Facebook */}
               <div className="flex items-start gap-4">
-                <FaFacebookF className="text-red-600 text-xl mt-1" />
+                <FaFacebookF className="text-blue-600 text-xl mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg text-gray-800">Follow Us on Facebook</h3>
                   <Link
@@ -80,7 +80,7 @@ export default function ContactUs() {
               <div className="md:pt-20">
                 <hr className="border-gray-300 mb-4" />
                 <h3 className="text-2xl  font-bold mb-4 flex items-center">
-                  <FaCrown className="mr-2 text-red-600 -mt-2" />
+                  <FaCrown className="mr-2 text-blue-600 -mt-2" />
                   MV The Crown
                 </h3>
                 <p className="text-gray-700 mb-4 max-w-md">
