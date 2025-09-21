@@ -20,7 +20,7 @@ export default function BlogDetailPage({ params }) {
         imageUrl="/13.png"
         title="Blog Details"
         subtitle=""
-        heightClass=" h-[35vh] lg:h-[70vh]"
+        heightClass=" h-[50vh] lg:h-[70vh]"
       />
       <section className="py-10 px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-4">{post.title}</h1>

@@ -12,7 +12,7 @@ export default async function Page() {
           imageUrl="/13.png"
           title="Ticket Booking"
           subtitle=""
-          heightClass=" h-[35vh] lg:h-[70vh]"
+          heightClass=" h-[50vh] lg:h-[70vh]"
         /> 
          <StepProcess />
           <Packages packages={packages} />
