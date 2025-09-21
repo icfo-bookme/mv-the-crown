@@ -106,7 +106,7 @@ export default function Packages({ packages }) {
         <div className='bg-[#FFFFFF] '>
             <div className="max-w-5xl mx-auto px-4 py-12">
                 <div className={`  text-center mb-12`}>
-                    <h4 className="text-3xl  text-center text-gray-950  pt-8 lg:text-3xl font-bold mb-1">
+                    <h4 className="text-2xl  text-center text-gray-950  pt-8 lg:text-3xl font-bold mb-1">
                         MV The Crown <span className="text-red-700">Packages</span>
                     </h4>
                     <p className="text-gray-900 max-w-2xl mx-auto">

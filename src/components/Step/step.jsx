@@ -45,7 +45,7 @@ export default function StepProcess() {
                 />
             </div>
 
-            <h4 className="text-4xl   text-center text-gray-950   lg:text-3xl font-bold mb-12">
+            <h4 className="text-2xl   text-center text-gray-950   lg:text-3xl font-bold mb-12">
                 Ticket Booking <span className="text-red-700">Process</span>
             </h4>
 
