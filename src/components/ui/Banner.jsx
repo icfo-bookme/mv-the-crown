@@ -59,18 +59,18 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
             {/* Call Now button */}
             <button
               onClick={() => window.location.href = 'tel:+880123456789'}
-              className="flex items-center justify-center font-bold  text-white border-2 border-white   p-2 rounded-3xl shadow-lg hover:bg-black/20 transition-all duration-300 text-[9px] md:text-sm"
+              className="flex items-center justify-center font-bold  text-white border-2 border-white px-2 py-1 lg:px-4 lg:py-2 rounded-3xl shadow-lg hover:bg-black/20 transition-all duration-300 text-[11px] md:text-sm"
             >
 
               Call Now →
             </button>
 
             {/* Phone Numbers */}
-            {['09674673674', '01777277727', '098563564546'].map((number, index) => (
+            {['096746736', '01777277727', '0985635645'].map((number, index) => (
               <button
                 key={index}
                 onClick={() => window.location.href = `tel:${number}`}
-                className=" backdrop-blur-sm text-white border border-white font-medium px-4 py-2 rounded-3xl shadow-lg hover:bg-white/20 transition-all duration-300 text-[9px] md:text-sm"
+                className=" backdrop-blur-sm text-white border border-white font-medium px-2 py-1 lg:px-4 lg:py-2 rounded-3xl shadow-lg hover:bg-white/20 transition-all duration-300 text-[11px] md:text-sm"
               >
                 {number}
               </button>
