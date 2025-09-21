@@ -79,7 +79,7 @@ export default function ContactUs() {
               </div>
               <div className="md:pt-20">
                 <hr className="border-gray-300 mb-4" />
-                <h3 className="text-2xl  font-bold mb-4 flex items-center">
+                <h3 className="text-2xl text-blue-950 font-bold mb-4 flex items-center">
                   <FaCrown className="mr-2 text-blue-600 -mt-2" />
                   MV The Crown
                 </h3>
