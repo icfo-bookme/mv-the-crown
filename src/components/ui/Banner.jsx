@@ -59,7 +59,7 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
             {/* Call Now button */}
             <button
               onClick={() => window.location.href = 'tel:+880123456789'}
-              className="flex items-center justify-center font-bold  text-white border-2 border-white   p-2 rounded-3xl shadow-lg hover:bg-black/20 transition-all duration-300 text-xs md:text-sm"
+              className="flex items-center justify-center font-bold  text-white border-2 border-white   p-2 rounded-3xl shadow-lg hover:bg-black/20 transition-all duration-300 text-[9px] md:text-sm"
             >
 
               Call Now →
@@ -70,7 +70,7 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
               <button
                 key={index}
                 onClick={() => window.location.href = `tel:${number}`}
-                className=" backdrop-blur-sm text-white border border-white font-medium px-4 py-2 rounded-3xl shadow-lg hover:bg-white/20 transition-all duration-300 text-xs md:text-sm"
+                className=" backdrop-blur-sm text-white border border-white font-medium px-4 py-2 rounded-3xl shadow-lg hover:bg-white/20 transition-all duration-300 text-[9px] md:text-sm"
               >
                 {number}
               </button>
