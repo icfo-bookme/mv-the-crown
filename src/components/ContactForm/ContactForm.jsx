@@ -69,7 +69,7 @@ const ContactForm = ({ title }) => {
             />
             {title === "show" &&
                 <div className="text-center mb-8">
-                    <h1 className="text-xl font-bold text-blur-950 mb-2">
+                    <h1 className="text-xl text-blue-800 font-bold text-blur-950 mb-2">
                         Send Us a Message
                     </h1>
                     <p className="text-gray-600">We will get back to you as soon as possible</p>
