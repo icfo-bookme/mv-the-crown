@@ -69,7 +69,7 @@ export default function Schedules({ schedules }) {
     return (
         <div>
             {/* Header */}
-            <div className="px-4 bg-gray-50 sm:px-6 py-10 border-b border-gray-200 text-center">
+            <div className="px-4 bg-gray-50 sm:px-6 py-5 border-b border-gray-200 text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold text-blue-950">
                     Upcoming Schedule Of <span className="text-red-600">MV The Crown</span>
                 </h2>

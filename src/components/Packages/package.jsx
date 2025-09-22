@@ -55,7 +55,7 @@ export default function Packages({ packages }) {
         window.open(url, '_blank');
     };
 
-    const truncateText = (text, wordLimit = 20, charLimit = 100) => {
+    const truncateText = (text, wordLimit = 30, charLimit = 200) => {
         if (!text) return "";
 
         const words = text.trim().split(/\s+/);
@@ -208,10 +208,10 @@ export default function Packages({ packages }) {
                                                     {pkg.description && (
                                                         <div className="mb-2">
                                                             <p className="text-gray-900">
-                                                                {truncateText(pkg.description)}
+                                                             <strong className="mr-1"> Details:</strong>  {truncateText(pkg.description)}
                                                                 <button
                                                                     onClick={() => openModal(pkg.description)}
-                                                                    className="text-blue-600 hover:text-blue-800 font-medium ml-2 text-sm"
+                                                                    className="text-blue-800 hover:text-blue-600 font-bold ml-2 text-base"
                                                                 >
                                                                     Read more
                                                                 </button>
@@ -351,7 +351,7 @@ export default function Packages({ packages }) {
                                 <div className="p-6 border-t bg-gray-50 flex justify-end">
                                     <button
                                         onClick={closeModal}
-                                        className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg"
+                                        className="bg-gradient-to-r from-[#313881] to-[#0678B4] hover:bg-blue-700 text-white px-5 py-2 rounded-lg"
                                     >
                                         Close
                                     </button>

@@ -12,7 +12,7 @@ export default async function Page() {
           imageUrl="/13.png"
           title="Schedules"
           subtitle=""
-          heightClass=" h-[50vh] lg:h-[70vh]"
+          heightClass=" h-[50vh] lg:h-[60vh]"
         /> 
         <Schedules schedules={schedules} />
     </div>
