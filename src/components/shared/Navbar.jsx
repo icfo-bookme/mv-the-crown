@@ -394,7 +394,7 @@ const BookMeHeader = () => {
               <div className="ml-3 hidden lg:flex items-center justify-center gap-2">
                 <div className="flex items-center">
                   <a
-                    href="tel:01923239293"
+                    href="tel:01841666644"
                     className="ml-[10px] mt-[9px]"
                   >
                     <div className="phone-call md:w-[50px] md:h-[50px] w-[36px] h-[36px] ml-[15px]">
@@ -402,7 +402,7 @@ const BookMeHeader = () => {
                     </div>
                   </a>
                   <a
-                    href="https://wa.me/01923239293"
+                    href="https://wa.me/01841666644"
                     className="mr-[10px] ml-[5px]"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -415,8 +415,8 @@ const BookMeHeader = () => {
                   <div>
                     <p className="text-sm text-white">Call Anytime</p>
                     <h4 className="text-lg font-semibold">
-                      <a href="tel:01923239293" className="text-white">
-                        01923239293
+                      <a href="tel:01841666644" className="text-white">
+                        01841-666644
                       </a>
                     </h4>
                   </div>
