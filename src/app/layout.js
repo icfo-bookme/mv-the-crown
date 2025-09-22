@@ -1,5 +1,3 @@
-// app/layout.js or app/layout.tsx
-
 import "./globals.css";
 import Header from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
