@@ -47,7 +47,7 @@ const PaymentMethods = () => {
   return (
     <section className=" max-w-6xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-2">
+        <h2 className="text-3xl font-semibold text-blue-950 mb-2">
           Payment Method For <span className="text-red-600">MV The Crown</span>
         </h2>
         <p className="text-gray-600 mb-10">

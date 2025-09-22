@@ -96,10 +96,15 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <FaPhoneAlt className="mt-1 mr-3 text-blue-500" />
-                <div>
-                  <p className="text-gray-400 text-sm">Call Anytime</p>
-                  <p className="font-medium text-sm">01841-666644</p>
-                </div>
+
+
+                <Link href="tel:+8801841666644">
+                  <div className="cursor-pointer">
+                    <p className="text-gray-400 text-sm">Call Anytime</p>
+                    <p className="font-medium text-sm">01841-666644</p>
+                  </div>
+                </Link>
+
               </div>
               <div className="flex items-start">
                 <FaEnvelope className="mt-1 mr-3 text-blue-500" />

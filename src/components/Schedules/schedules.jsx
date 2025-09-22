@@ -70,11 +70,11 @@ export default function Schedules({ schedules }) {
         <div>
             {/* Header */}
             <div className="px-4 bg-gray-50 sm:px-6 py-10 border-b border-gray-200 text-center">
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-950">
+                <h2 className="text-2xl sm:text-3xl font-bold text-blue-950">
                     Upcoming Schedule Of <span className="text-red-600">MV The Crown</span>
                 </h2>
                 <h3 className="text-lg sm:text-2xl mt-2 font-semibold text-gray-700">Khulna - Sundarbans - Khulna</h3>
-                <p className="text-sm sm:text-base font-semibold text-red-600 mt-1">“Schedule may change with tidal state’’</p>
+                <p className="text-sm sm:text-base font-semibold text-red-700 mt-1">“Schedule may change with tidal state’’</p>
             </div>
 
             {/* Schedule Section */}

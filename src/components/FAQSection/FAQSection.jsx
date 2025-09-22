@@ -7,7 +7,7 @@ const FAQSection = () => {
         <p className="p-2 text-sm font-medium tracking-wider text-center text-red-600 uppercase">
           How it works
         </p>
-        <h2 className="mb-12 text-xl font-bold leading-none text-center text-blue-950 sm:text-2xl">
+        <h2 className="mb-12 text-xl font-bold leading-none text-center text-blue-950 sm:text-3xl">
           Frequently Asked Questions
         </h2>
         <div className="flex flex-col divide-y text-gray-900 sm:px-8 lg:px-12 xl:px-32 dark:divide-gray-300">
