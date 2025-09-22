@@ -9,6 +9,8 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
+import PrimaryButton from "../ui/Button";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 const ImageCarousel = ({ propertyImages }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -37,6 +39,7 @@ const ImageCarousel = ({ propertyImages }) => {
         setThumbInnerStyle("100%");
       }
     };
+
 
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -106,12 +109,20 @@ const ImageCarousel = ({ propertyImages }) => {
   if (!propertyImages || propertyImages.length === 0) {
     return <p className="text-center text-gray-500">No images available</p>;
   }
+  const handleCall = () => {
+    window.location.href = 'tel:+8801841666644';
+  };
 
+  const handleWhatsApp = () => {
+    const message = "Hello, I'm interested in booking a package on MV The Crown.";
+    const url = `https://wa.me/8801841666644?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
   return (
     <div className="py-10">
       <h4 className="text-3xl text-center text-blue-950  py-8 lg:text-3xl font-bold mb-4">
-                Photo <span className="text-red-700">Gallery</span>
-            </h4>
+        Photo <span className="text-red-700">Gallery</span>
+      </h4>
       <div
         className="flex lg:flex-row flex-col items-start gap-4 mx-auto bg-[#EBF0F4]"
         style={{ maxWidth: "90%" }}
@@ -175,7 +186,7 @@ const ImageCarousel = ({ propertyImages }) => {
                   ? "scaleX(-1)"
                   : "scaleX(-1) scaleY(-1)",
             }}
-           
+
           >
             {propertyImages
               .map((image, index) => (
@@ -202,6 +213,29 @@ const ImageCarousel = ({ propertyImages }) => {
               .reverse()}
           </Swiper>
         </div>
+      </div>
+      <div className="flex flex-row items-center justify-center gap-4 mt-12  ">
+        <button
+          style={{
+            background: 'linear-gradient(90deg, #313881, #0678B4)',
+          }}
+          onClick={handleCall}
+          className="flex items-center text-white px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow-md"
+        >
+          <FaPhoneAlt className="mr-2" />
+          Call Now
+        </button>
+        <PrimaryButton
+          onClick={handleWhatsApp}
+          style={{
+            background: 'linear-gradient(90deg, #313881, #0678B4)',
+          }}
+          bgColor="bg-green-800"
+          hoverColor="hover:bg-green-600"
+          icon={FaWhatsapp}
+        >
+          Book Now
+        </PrimaryButton>
       </div>
     </div>
   );

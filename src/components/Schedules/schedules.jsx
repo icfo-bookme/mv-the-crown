@@ -57,12 +57,12 @@ export default function Schedules({ schedules }) {
     };
 
     const handleCall = () => {
-        window.location.href = 'tel:+880123456789';
+        window.location.href = 'tel:+8801841666644';
     };
 
     const handleWhatsApp = () => {
         const message = "Hello, I'm interested in booking a package on MV The Crown.";
-        const url = `https://wa.me/880123456789?text=${encodeURIComponent(message)}`;
+        const url = `https://wa.me/8801841666644?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
 
