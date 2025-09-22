@@ -47,8 +47,8 @@ export default function ContactUs() {
                 <div>
                   <h3 className="font-semibold text-lg text-gray-800">Phone</h3>
                   <p className="text-gray-600">
-                    09613-888000, 01610051005, <br />
-                    01967670707
+                    01841-666644 <br />
+                    
                   </p>
                 </div>
               </div>
@@ -58,7 +58,7 @@ export default function ContactUs() {
                 <FaEnvelope className="text-blue-600 text-xl mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg text-gray-800">Email</h3>
-                  <p className="text-gray-600">info.karnafulyexpress@gmail.com</p>
+                  <p className="text-gray-600">bookmebdltd@gmail.com</p>
                 </div>
               </div>
 
@@ -68,12 +68,12 @@ export default function ContactUs() {
                 <div>
                   <h3 className="font-semibold text-lg text-gray-800">Follow Us on Facebook</h3>
                   <Link
-                    href="https://facebook.com"
+                    href="https://facebook.com/bookmeltd"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline"
                   >
-                    facebook.com/karnafulyexpress
+                    www.facebook.com/bookmeltd
                   </Link>
                 </div>
               </div>

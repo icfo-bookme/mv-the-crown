@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaFacebookF,
   FaTwitter,
@@ -34,17 +35,11 @@ const Footer = () => {
             </p>
 
             <div className="flex space-x-4 mb-6">
-              <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition">
-                <FaFacebookF className="text-lg" />
-              </a>
-              <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-white transition">
-                <FaTwitter className="text-lg" />
-              </a>
-              <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transition">
-                <FaInstagram className="text-lg" />
-              </a>
-              <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition">
-                <FaLinkedinIn className="text-lg" />
+              <a href="https://www.facebook.com/share/1B2q3YxE7r/" className="text-white flex items-center justify-center gap-2   hover:text-gray-300 transition">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+                </svg>
+                <p className='underline text-blue-200'>www.facebook.com/bookmeltd</p>
               </a>
             </div>
 
@@ -67,11 +62,31 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Schedule</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Ticket Booking</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Payment Options</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Contact Us</a></li>
+              <li>
+                <Link href="/" className="text-gray-400 hover:text-white transition">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/schedule" className="text-gray-400 hover:text-white transition">
+                  Schedule
+                </Link>
+              </li>
+              <li>
+                <Link href="/ticket" className="text-gray-400 hover:text-white transition">
+                  Ticket Booking
+                </Link>
+              </li>
+              <li>
+                <Link href="/payment" className="text-gray-400 hover:text-white transition">
+                  Payment Options
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-400 hover:text-white transition">
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -83,7 +98,7 @@ const Footer = () => {
                 <FaPhoneAlt className="mt-1 mr-3 text-blue-500" />
                 <div>
                   <p className="text-gray-400 text-sm">Call Anytime</p>
-                  <p className="font-medium text-sm">01923239293</p>
+                  <p className="font-medium text-sm">01841-666644</p>
                 </div>
               </div>
               <div className="flex items-start">

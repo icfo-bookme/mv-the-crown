@@ -66,7 +66,7 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
             </button>
 
             {/* Phone Numbers */}
-            {['096746736', '01777277727', '0985635645'].map((number, index) => (
+            {['01841666644', '01967776777'].map((number, index) => (
               <button
                 key={index}
                 onClick={() => window.location.href = `tel:${number}`}
@@ -77,7 +77,7 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
             ))}
           </div>
           <button
-            onClick={() => window.location.href = 'tel:+880123456789'}
+            onClick={() => window.open('https://wa.me/+8801841666644', '_blank')}
             className={`${playfair.className} flex items-center justify-center bg-[#C70909] text-white font-medium px-4 py-2 rounded-3xl shadow-lg hover:bg-white hover:text-red-800 transition-all duration-300 text-sm md:text-base`}
           >
             <Image

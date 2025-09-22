@@ -230,13 +230,13 @@ const BookMeHeader = () => {
           <h3 className="text-lg font-semibold text-[#00026E] mb-3">Contact Us</h3>
           <div className="flex items-center space-x-4 mb-4">
             <a
-              href="tel:01923239293"
+              href="tel:01841666644"
               className="flex items-center justify-center w-12 h-12 bg-[#00026E] rounded-full text-white hover:bg-[#00026E]/90 transition-colors"
             >
               <FaPhone className="text-xl" />
             </a>
             <a
-              href="https://wa.me/01923239293"
+              href="https://wa.me/+8801841666644"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-green-500 rounded-full text-white hover:bg-green-600 transition-colors relative"
@@ -248,7 +248,7 @@ const BookMeHeader = () => {
           <div>
             <p className="text-sm text-gray-600">Call Anytime</p>
             <a
-              href="tel:01923239293"
+              href="tel:01841666644"
               className="text-lg font-semibold text-[#00026E] hover:underline"
             >
               01923239293
@@ -402,7 +402,7 @@ const BookMeHeader = () => {
                     </div>
                   </a>
                   <a
-                    href="https://wa.me/01841666644"
+                    href="https://wa.me/+8801841666644"
                     className="mr-[10px] ml-[5px]"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -426,13 +426,13 @@ const BookMeHeader = () => {
               {/* Mobile Menu Button and Icons */}
               <div className="lg:hidden  flex items-center gap-4">
                 <div className="flex items-center gap-2">
-                  <a href="tel:01923239293" className="w-[38px] h-[38px]">
+                  <a href="tel:01841666644" className="w-[38px] h-[38px]">
                     <div className="phone-call w-[36px] h-[36px]">
                       <FaPhone className="mt-[9px] ml-[10px]" />
                     </div>
                   </a>
                   <a
-                    href="https://wa.me/01923239293"
+                    href="https://wa.me/+8801841666644"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-[38px] h-[38px]"

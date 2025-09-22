@@ -8,7 +8,7 @@ const PaymentMethods = () => {
       serviceCharge: "2% bkash service charge will be added.",
       process: [
         { label: "Dial", value: "*247#, Choose “Payment“" },
-        { label: "Merchant number", value: "01748704622" },
+        { label: "Merchant number", value: "01605-779999" },
         { label: "Amount", value: "xxx" },
         { label: "Enter Ref", value: "111" }
       ]
@@ -28,8 +28,8 @@ const PaymentMethods = () => {
       serviceCharge: null,
       process: [
         { label: "Bank", value: "BRAC Bank Limited" },
-        { label: "Account ID", value: "1104204638686001" },
-        { label: "Account Name", value: "Technova" },
+        { label: "Account ID", value: "2067559440001" },
+        { label: "Account Name", value: "BOOKME" },
         { label: "Branch", value: "CDA Avenue, Chittagong" },
         { label: "Branch Routing No", value: "060151481" }
       ]
@@ -39,7 +39,7 @@ const PaymentMethods = () => {
       serviceCharge: null,
       process: [
         { label: "Address", value: "IFCO Complex (2nd floor), GEC Circle, CDA Avenue, Chattogram" },
-        { label: "Phone", value: "09613-888000" }
+        { label: "Phone", value: "01841-666644" }
       ]
     }
   ];

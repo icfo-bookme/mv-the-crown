@@ -17,7 +17,7 @@ const PrimaryButton = ({
       className={`flex items-center px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow-md ${bgColor} ${hoverColor} ${textColor} ${className}`}
       {...props}
     >
-      {Icon && <Icon className="mr-2" />}
+      {Icon && <Icon className="mr-2 " />}
       {children}
     </button>
   );

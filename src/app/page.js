@@ -1,5 +1,6 @@
 import BlogSection from "@/components/BlogSection/BlogSection";
 import CruisePromo from "@/components/CruisePromo/CruisePromo";
+import FAQSection from "@/components/FAQSection/FAQSection";
 import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
 import Packages from "@/components/Packages/package";
 import PaymentMethods from "@/components/PaymentMethods/PaymentMethods";
@@ -32,6 +33,7 @@ export default async function Home() {
         <PaymentMethods />
         <CruisePromo />
         <ImageCarousel propertyImages={images} />
+        <FAQSection/>
         <BlogSection />
       </div>
     </main>

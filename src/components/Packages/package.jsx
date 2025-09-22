@@ -42,7 +42,7 @@ export default function Packages({ packages }) {
     };
 
     const handleCall = () => {
-        window.location.href = 'tel:+880123456789'; // Replace with real number
+        window.location.href = 'tel:+8801841666644'; // Replace with real number
     };
 
     const handleBook = () => {
@@ -51,7 +51,7 @@ export default function Packages({ packages }) {
 
     const handleWhatsApp = () => {
         const message = "Hello, I'm interested in booking a package on MV The Crown.";
-        const url = `https://wa.me/880123456789?text=${encodeURIComponent(message)}`; // Replace with real number
+        const url = `https://wa.me/8801841666644?text=${encodeURIComponent(message)}`; // Replace with real number
         window.open(url, '_blank');
     };
 
@@ -104,7 +104,7 @@ export default function Packages({ packages }) {
 
     return (
         <div className='bg-[#FFFFFF] '>
-            <div className="max-w-5xl mx-auto px-4 py-12">
+            <div className="max-w-5xl mx-auto px-4 ">
                 <div className={`  text-center mb-12`}>
                     <h4 className="text-2xl  text-center text-gray-950  pt-8 lg:text-3xl font-bold mb-1">
                         MV The Crown <span className="text-red-700">Packages</span>
@@ -148,7 +148,7 @@ export default function Packages({ packages }) {
 
                                 const discountText =
                                     pkg.discount_percent && pkg.discount_percent > 0
-                                        ? `${pkg.discount_percent}% OFF`
+                                        ? `${Math.round(pkg.discount_percent)}% OFF`
                                         : pkg.discount_amount && pkg.discount_amount > 0
                                             ? `Save ৳${Math.round(pkg.discount_amount)}`
                                             : null;
@@ -275,7 +275,7 @@ export default function Packages({ packages }) {
                                                         </button>
 
                                                         <PrimaryButton
-                                                           style={{
+                                                            style={{
                                                                 background: 'linear-gradient(90deg, #313881, #0678B4)',
                                                             }}
                                                             onClick={handleWhatsApp}
