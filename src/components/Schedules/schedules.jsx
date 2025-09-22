@@ -109,7 +109,7 @@ export default function Schedules({ schedules }) {
                                         {['Departure', 'Time', 'Return', 'Time'].map((heading, index) => (
                                             <th
                                                 key={`${heading}-${index}`}
-                                                className="px-2 py-3 text-sm sm:text-base text-white bg-gradient-to-r from-[#565fc2] to-[#22a2ec] uppercase text-center"
+                                                className="px-2 py-3 text-sm sm:text-base text-white bg-gradient-to-r from-[#2b35a8] to-[#37789e] uppercase text-center"
                                             >
                                                 {heading}
                                             </th>
