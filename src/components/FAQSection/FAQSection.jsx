@@ -2,15 +2,15 @@ import React from "react";
 
 const FAQSection = () => {
   return (
-    <section className="dark:bg-gray-100 dark:text-gray-800">
+    <section className="text-gray-800">
       <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
         <p className="p-2 text-sm font-medium tracking-wider text-center text-red-600 uppercase">
           How it works
         </p>
-        <h2 className="mb-12 text-xl font-bold leading-none text-center sm:text-2xl">
+        <h2 className="mb-12 text-xl font-bold leading-none text-center text-blue-950 sm:text-2xl">
           Frequently Asked Questions
         </h2>
-        <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 dark:divide-gray-300">
+        <div className="flex flex-col divide-y text-gray-900 sm:px-8 lg:px-12 xl:px-32 dark:divide-gray-300">
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
