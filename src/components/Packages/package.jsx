@@ -247,7 +247,7 @@ export default function Packages({ packages }) {
                                                                 </div>
                                                                 <div className='flex items-center justify-center'>
                                                                     <p className="text-xs font-semibold text-blue-800 bg-blue-100 px-2 py-1 inline-block rounded">
-                                                                        2 Days 3 Nights
+                                                                        {pkg.Validity}
                                                                     </p>
                                                                     {/* Price Note */}
                                                                     <p className="text-xs text-gray-500">/ Per person</p>

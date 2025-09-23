@@ -1,7 +1,10 @@
 import PaymentMethods from "@/components/PaymentMethods/PaymentMethods";
 import Banner from "@/components/ui/Banner";
+import CTAButtons from "@/components/ui/CTAButtons";
+
 
 export default function Page() {
+ 
   return (
     <div className="pt-0 bg-gray-50">
       <Banner
@@ -12,6 +15,8 @@ export default function Page() {
       />
         
       <PaymentMethods />
+<CTAButtons/>
+      
     </div>
   )
 }
