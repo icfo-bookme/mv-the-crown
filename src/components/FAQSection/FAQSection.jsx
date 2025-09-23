@@ -8,99 +8,161 @@ const FAQSection = () => {
           How it works
         </p>
         <h2 className="mb-12 text-xl font-bold leading-none text-center text-blue-950 sm:text-3xl">
-          Frequently Asked Questions
+          MV The Crown – Frequently Asked Questions (FAQ)
         </h2>
+
         <div className="flex flex-col divide-y text-gray-900 sm:px-8 lg:px-12 xl:px-32 dark:divide-gray-300">
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              How many cabins are available on MV The Crown?
+              1. How many cabins are available?
             </summary>
             <div className="px-4 pb-4">
               <p>
-                MV The Crown has a total of 28 luxury AC cabins, accommodating up to 75 passengers. The cabins are divided into three categories: 2-person rooms (11 cabins), 3-person rooms (15 cabins), and 4-person rooms (2 cabins), all equipped with modern amenities for a comfortable journey.
+                MV The Crown offers <strong>32 luxury cabins</strong>:
               </p>
+              <ul className="list-disc pl-5">
+                <li>18 Panorama Series (Main Deck)</li>
+                <li>14 State Series (Lower Deck)</li>
+              </ul>
+              <p>Total capacity: approximately <strong>75 guests</strong>.</p>
             </div>
           </details>
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              What is included in the Sundarbans 3-day, 2-night tour?
-            </summary>
-            <div className="px-4 pb-4 space-y-2">
-              <p>
-                The tour package includes luxurious accommodation, daily meals (3 main meals and 2 light snacks), BBQ nights, guided excursions, river and forest tracking, and access to all onboard facilities like swimming pool, AC dining, TV, and more.
-              </p>
-              <p>
-                Safety is ensured with experienced guides and forest department personnel on board. Essential items such as caps, sunglasses, sunscreen, medications, and personal hygiene products are also provided.
-              </p>
-            </div>
-          </details>
-
-          <details>
-            <summary className="py-2 outline-none cursor-pointer focus:underline">
-              What is the itinerary for the Sundarbans cruise?
-            </summary>
-            <div className="px-4 pb-4 space-y-2">
-              <p>
-                <strong>Day 1:</strong> Arrival at the ship via trailer, morning snacks, visit Rupsha Bridge, Khulna Shipyard, Rampal Power Plant, then proceed to Chandpai Forest Office and Harbaria for eco-tourism exploration. Night stay on the ship at Kotka.
-                </p>
-              <p>
-                <strong>Day 2:</strong> Morning canal visit around Kotka, wildlife spotting (deer, birds, monkeys, crocodiles), visit Watch Tower, continue to Jamtoli Sea Beach and Hiron Point, evening BBQ dinner on board, and overnight cruise toward Karamjal. Optional second route to Dimersh Char and Kochikhali if conditions permit.
-              </p>
-              <p>
-                <strong>Day 3:</strong> Visit Karamjal eco-tourism spot, observe wildlife and crocodile breeding center, return to Khulna around 6–7 PM, and onward departure by bus/train.
-              </p>
-            </div>
-          </details>
-
-          <details>
-            <summary className="py-2 outline-none cursor-pointer focus:underline">
-              Are there any age restrictions or special requirements?
+              2. What is included in the 3-Day, 2-Night Sundarbans Cruise?
             </summary>
             <div className="px-4 pb-4">
-              <p>
-                MV The Crown welcomes travelers of all ages. Children must be accompanied by adults. Comfortable clothing and personal essentials are recommended. Any special requirements can be communicated at the time of booking.
-              </p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>AC cabins with attached washrooms</li>
+                <li>Full-board meals (breakfast, lunch, dinner, snacks, tea/coffee)</li>
+                <li>BBQ dinner and onboard entertainment</li>
+                <li>Forest entry permits & armed forest guards</li>
+                <li>Canal boat rides, guided forest walks, wildlife exploration</li>
+              </ul>
             </div>
           </details>
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              What payment methods are accepted for booking?
+              3. What is the typical itinerary?
+            </summary>
+            <div className="px-4 pb-4 space-y-1">
+              <p><strong>Day 1:</strong> Khulna departure → Harbaria Eco-Center → Cruise to Kotka</p>
+              <p><strong>Day 2:</strong> Sunrise canal ride → Kotka forest & beach → Kochikhali visit → BBQ & cultural program</p>
+              <p><strong>Day 3:</strong> Morning ride → Koromjol Crocodile Center → Return to Khulna</p>
+            </div>
+          </details>
+
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              4. Are there age restrictions?
             </summary>
             <div className="px-4 pb-4">
-              <p>
-                Payments can be made via bKash, Nagad, and bank transfers. All transactions are secure, and our team will assist to ensure a smooth and convenient booking experience.
-              </p>
+              <p>No strict age limit. All guests must carry valid ID:</p>
+              <ul className="list-disc pl-5">
+                <li>Locals: NID</li>
+                <li>Foreigners: Passport (extra government forest fees apply)</li>
+              </ul>
             </div>
           </details>
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              What should I bring for the Sundarbans cruise?
+              5. What is the child policy?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
-              <p>
-                Essentials include warm clothing, sunscreen, caps, sunglasses, camera, memory cards, power banks, and personal hygiene items. The cruise provides toiletries like soap, shampoo, toothpaste, toothbrush, and drinking water.
-              </p>
-              <p>
-                For safety and convenience, medications and guidance from trained personnel are also provided onboard.
-              </p>
+            <div className="px-4 pb-4">
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Children under 3 years: Complimentary (no extra seat/bed)</li>
+                <li>Children 3–8 years: 50% of adult fare (separate seat/meal provided)</li>
+                <li>Children 8+ years: Full adult fare applies</li>
+              </ul>
             </div>
           </details>
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              What are the Terms and Conditions for booking MV The Crown?
+              6. What payment methods are accepted?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
-              <p>
-                Your booking will be considered confirmed only with an advance payment of at least 50% of the total tour price. The remaining balance must be paid before the ship departure. For group bookings, full payment is required at least 3 working days before departure.
-              </p>
-              <p>
-                All bookings are subject to the cancellation rules and fees of the company. The accompanying guide reserves the right to make adjustments to the itinerary if needed. In case of fog, rain, or other unforeseen problems causing delays or cancellations, we will do our best to make your holidays enjoyable. If you choose not to avail the trip, the cancellation fee will apply according to company rates.
-              </p>
+            <div className="px-4 pb-4">
+              <ul className="list-disc pl-5 space-y-1">
+                <li>50% advance required at booking</li>
+                <li>Remaining balance before departure</li>
+                <li>Accepted methods: Bank transfer, Bkash, Nagad</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              7. What is the cancellation policy?
+            </summary>
+            <div className="px-4 pb-4">
+              <ul className="list-disc pl-5 space-y-1">
+                <li>28+ days before departure: Up to 80% refund</li>
+                <li>Within 21 days: Partial or no refund (based on notice period)</li>
+                <li>Trips may be rescheduled or cancelled due to weather, river conditions, or government restrictions</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              8. What facilities are in the cabins?
+            </summary>
+            <div className="px-4 pb-4">
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Air-conditioning</li>
+                <li>Private washroom</li>
+                <li>Comfortable bedding with linens</li>
+                <li>Wardrobe, sofa, mirror</li>
+                <li>Large windows (or balcony in select cabins)</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              9. What safety measures are onboard?
+            </summary>
+            <div className="px-4 pb-4">
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Life jackets & life buoys</li>
+                <li>Fire safety & first-aid kits</li>
+                <li>Modern navigation systems</li>
+                <li>Experienced, trained crew</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              10. What should I bring?
+            </summary>
+            <div className="px-4 pb-4">
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Valid ID / Passport</li>
+                <li>Comfortable clothing & shoes</li>
+                <li>Light jacket for evenings</li>
+                <li>Sunscreen, sunglasses, hat</li>
+                <li>Mosquito repellent</li>
+                <li>Personal medicines & essentials</li>
+                <li>Camera (drone/pro filming requires prior permission)</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary className="py-2 outline-none cursor-pointer focus:underline">
+              11. How do I book?
+            </summary>
+            <div className="px-4 pb-4">
+              <p>For bookings & availability, contact:</p>
+              <ul className="list-disc pl-5">
+                <li>📞 <strong>+880 1841-666644</strong></li>
+                <li>📞 <strong>+880 1841-333322</strong></li>
+              </ul>
             </div>
           </details>
 
