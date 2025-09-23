@@ -1,4 +1,5 @@
 import BlogSection from "@/components/BlogSection/BlogSection";
+import { Contact } from "@/components/Contact/Contact";
 import CruisePromo from "@/components/CruisePromo/CruisePromo";
 import FAQSection from "@/components/FAQSection/FAQSection";
 import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
@@ -25,15 +26,16 @@ export default async function Home() {
           ship="MV The Crown,"
           title="Luxury River Cruises from Khulna"
           subtitle="Khulna - Sundarbans - Khulna"
-          heightClass=" h-[65vh] lg:h-[80vh]"
+          heightClass=" h-[65vh] lg:h-[100vh]"
         /> 
         <StepProcess />
         <Packages packages={packages} />
         <Schedules schedules ={schedules} />
         <PaymentMethods />
         <CruisePromo />
-        <ImageCarousel propertyImages={images} />
+        <ImageCarousel propertyImages={images} />      
         <FAQSection/>
+         <Contact/>  
         <BlogSection />
       </div>
     </main>

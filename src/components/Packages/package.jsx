@@ -208,7 +208,7 @@ export default function Packages({ packages }) {
                                                     {pkg.description && (
                                                         <div className="mb-2">
                                                             <p className="text-gray-900">
-                                                             <strong className="mr-1"> Details:</strong>  {truncateText(pkg.description)}
+                                                                <strong className="mr-1"> Details:</strong>  {truncateText(pkg.description)}
                                                                 <button
                                                                     onClick={() => openModal(pkg.description)}
                                                                     className="text-blue-800 hover:text-blue-600 font-bold ml-2 text-base"
@@ -227,8 +227,14 @@ export default function Packages({ packages }) {
                                                     <div className="mb-4 sm:mb-0 flex gap-4 ">
                                                         {/* Single Trip */}
                                                         {singleTripPrice !== null && (
-                                                            <div className="bg-blue-50 p-3 rounded-lg">
-                                                                <p className="text-sm text-gray-600 font-medium">Single Trip</p>
+                                                            <div className="bg-blue-50 p-4 rounded-lg space-y-2">
+                                                                {/* Duration Label */}
+
+
+                                                                {/* Price Label */}
+                                                                <p className="text-sm text-red-600 font-medium">Price</p>
+
+                                                                {/* Price Section */}
                                                                 <div className="flex items-center">
                                                                     {hasDiscount && (
                                                                         <p className="text-sm text-gray-500 line-through mr-2">
@@ -239,8 +245,16 @@ export default function Packages({ packages }) {
                                                                         {Math.round(singleTripPrice)} TK
                                                                     </p>
                                                                 </div>
-                                                                <p className="text-xs text-gray-500">Per person</p>
+                                                                <div className='flex items-center justify-center'>
+                                                                    <p className="text-xs font-semibold text-blue-800 bg-blue-100 px-2 py-1 inline-block rounded">
+                                                                        2 Days 3 Nights
+                                                                    </p>
+                                                                    {/* Price Note */}
+                                                                    <p className="text-xs text-gray-500">/ Per person</p>
+                                                                </div>
+
                                                             </div>
+
                                                         )}
 
                                                         {/* Round Trip */}
