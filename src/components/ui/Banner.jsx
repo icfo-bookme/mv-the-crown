@@ -66,7 +66,7 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
             </button>
 
             {/* Phone Numbers */}
-            {['01841666644', '01967776777'].map((number, index) => (
+            {['01841666644', '01841333322'].map((number, index) => (
               <button
                 key={index}
                 onClick={() => window.location.href = `tel:${number}`}

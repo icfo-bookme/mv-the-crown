@@ -101,7 +101,7 @@ const Footer = () => {
                 <Link href="tel:+8801841666644">
                   <div className="cursor-pointer">
                     <p className="text-gray-400 text-sm">Call Anytime</p>
-                    <p className="font-medium text-sm">01841-666644</p>
+                    <p className="font-medium text-sm">01841-666644, 01841333322</p>
                   </div>
                 </Link>
 
