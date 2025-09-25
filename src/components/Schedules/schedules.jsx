@@ -106,7 +106,7 @@ export default function Schedules({ schedules }) {
                             <table className="w-full table-auto divide-y divide-gray-200">
                                 <thead>
                                     <tr>
-                                        {['Departure', 'Time', 'Return', 'Time'].map((heading, index) => (
+                                        {['Trip ','Departure', 'Time', 'Return', 'Time'].map((heading, index) => (
                                             <th
                                                 key={`${heading}-${index}`}
                                                 className="px-2 py-3 text-sm sm:text-base text-white bg-gradient-to-r from-[#2E3B83] to-[#37789e] uppercase text-center"
@@ -118,8 +118,9 @@ export default function Schedules({ schedules }) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {monthSchedules.map((schedule) => (
+                                    {monthSchedules.map((schedule, index) => (
                                         <tr key={schedule.id} className="hover:bg-gray-50 border border-gray-300 text-center text-sm text-black">
+                                            <td className="px-2 py-3 text-blue-950 font-bold text-base">Trip -{index+1}</td>
                                             <td className="px-2 py-3">{formatDate(schedule.depart_date)}</td>
                                             <td className="px-2 py-3">{formatTime(schedule.depart_time)}</td>
                                             <td className="px-2 py-3">{formatDate(schedule.return_date)}</td>

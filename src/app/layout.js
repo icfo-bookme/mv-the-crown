@@ -14,6 +14,14 @@ export const metadata = {
   keywords: [
     "MV The Crown",
     "Luxury river cruise Bangladesh",
+     "Sundarban Ships",
+    "Ships in Sundarban",
+    "Best ship of Sundarban",
+    "Sundarban ship booking",
+    "Sundarban ship rent",
+    "Sundarban ship ticket price",
+    "Sundarban booking online",
+    "Sundarban ship package",
     "Khulna Sundarbans cruise",
     "Sundarbans luxury tour",
     "Sundarbans cruise booking",
@@ -39,6 +47,7 @@ export const metadata = {
     "MV The Crown booking via bKash or Nagad",
     "Sundarbans 3-day 2-night luxury tour",
     "River cruise Khulna to Sundarbans ticket"
+
   ],
   openGraph: {
     title: "MV The Crown — Luxury River Cruises",

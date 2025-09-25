@@ -12,12 +12,14 @@ import {
 import { Roboto } from 'next/font/google';
 import PrimaryButton from '../ui/Button';
 import Link from 'next/link';
+import Modal from '../ui/Modal';
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
 
-export default function Packages({ packages }) {
+export default function Packages({ packages, foodAndDescription }) {
     const [selectedDescription, setSelectedDescription] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [showModal, setShowModal] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -28,7 +30,22 @@ export default function Packages({ packages }) {
 
         return () => clearTimeout(timer);
     }, []);
+    useEffect(() => {
+        if (isModalOpen) {
+            // Fix background scroll and prevent "jump"
+            const scrollBarCompensation = window.innerWidth - document.body.offsetWidth;
+            document.body.style.overflow = 'hidden';
+            document.body.style.paddingRight = `${scrollBarCompensation}px`;
+        } else {
+            document.body.style.overflow = 'auto';
+            document.body.style.paddingRight = '0px';
+        }
 
+        return () => {
+            document.body.style.overflow = 'auto';
+            document.body.style.paddingRight = '0px';
+        };
+    }, [isModalOpen]);
     const openModal = (description) => {
         setSelectedDescription(description);
         setIsModalOpen(true);
@@ -42,7 +59,7 @@ export default function Packages({ packages }) {
     };
 
     const handleCall = () => {
-        window.location.href = 'tel:+8801841666644'; // Replace with real number
+        window.location.href = 'tel:+8801841666644';
     };
 
     const handleBook = () => {
@@ -51,7 +68,7 @@ export default function Packages({ packages }) {
 
     const handleWhatsApp = () => {
         const message = "Hello, I'm interested in booking a package on MV The Crown.";
-        const url = `https://wa.me/8801841666644?text=${encodeURIComponent(message)}`; // Replace with real number
+        const url = `https://wa.me/8801841666644?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
 
@@ -106,12 +123,27 @@ export default function Packages({ packages }) {
         <div className='bg-[#FFFFFF] '>
             <div className="max-w-5xl mx-auto px-4 ">
                 <div className={`  text-center mb-12`}>
-                    <h4 className="text-2xl  text-center text-blue-950  pt-8 lg:text-3xl font-bold mb-1">
+                    <h1 className="text-2xl  text-center text-blue-950  pt-8 lg:text-3xl font-bold mb-1">
                         MV The Crown <span className="text-red-700">Packages</span>
-                    </h4>
-                    <p className="text-gray-900 max-w-2xl mx-auto">
+                    </h1>
+                    <p className="text-gray-900 max-w-3xl mx-auto">
                         Explore our premium cruise packages with exceptional amenities and competitive pricing
                     </p>
+                    <button
+                        onClick={() => setShowModal(true)}
+                        className="bg-gradient-to-r from-[#313881] to-[#0678B4] text-white px-6 py-3 mt-3 rounded-lg"
+                    >
+                        Food & Travel Description
+                    </button>
+                    <div className='max-h-[80vh]'>
+                        <Modal
+                            isOpen={showModal}
+                            onClose={() => setShowModal(false)}
+                            title="MV The Crown Food & Travel Description"
+                            foodAndDescription={foodAndDescription}
+                        />
+                    </div>
+
                 </div>
                 <div className={`${roboto.className}`}>
                     {isLoading ? (

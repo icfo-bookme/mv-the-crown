@@ -15,7 +15,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              1. How many cabins are available?
+               How many cabins are available?
             </summary>
             <div className="px-4 pb-4">
               <p>
@@ -31,7 +31,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              2. What is included in the 3-Day, 2-Night Sundarbans Cruise?
+               What is included in the 3-Day, 2-Night Sundarbans Cruise?
             </summary>
             <div className="px-4 pb-4">
               <ul className="list-disc pl-5 space-y-1">
@@ -46,7 +46,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              3. What is the typical itinerary?
+               What is the typical itinerary?
             </summary>
             <div className="px-4 pb-4 space-y-1">
               <p><strong>Day 1:</strong> Khulna departure → Harbaria Eco-Center → Cruise to Kotka</p>
@@ -57,7 +57,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              4. Are there age restrictions?
+               Are there age restrictions?
             </summary>
             <div className="px-4 pb-4">
               <p>No strict age limit. All guests must carry valid ID:</p>
@@ -70,7 +70,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              5. What is the child policy?
+               What is the child policy?
             </summary>
             <div className="px-4 pb-4">
               <ul className="list-disc pl-5 space-y-1">
@@ -83,7 +83,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              6. What payment methods are accepted?
+               What payment methods are accepted?
             </summary>
             <div className="px-4 pb-4">
               <ul className="list-disc pl-5 space-y-1">
@@ -96,7 +96,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              7. What is the cancellation policy?
+               What is the cancellation policy?
             </summary>
             <div className="px-4 pb-4">
               <ul className="list-disc pl-5 space-y-1">
@@ -109,7 +109,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              8. What facilities are in the cabins?
+               What facilities are in the cabins?
             </summary>
             <div className="px-4 pb-4">
               <ul className="list-disc pl-5 space-y-1">
@@ -124,7 +124,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              9. What safety measures are onboard?
+               What safety measures are onboard?
             </summary>
             <div className="px-4 pb-4">
               <ul className="list-disc pl-5 space-y-1">
@@ -138,7 +138,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              10. What should I bring?
+               What should I bring?
             </summary>
             <div className="px-4 pb-4">
               <ul className="list-disc pl-5 space-y-1">
@@ -155,7 +155,7 @@ const FAQSection = () => {
 
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              11. How do I book?
+               How do I book?
             </summary>
             <div className="px-4 pb-4">
               <p>For bookings & availability, contact:</p>
