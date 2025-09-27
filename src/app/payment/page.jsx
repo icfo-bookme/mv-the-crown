@@ -3,6 +3,12 @@ import Banner from "@/components/ui/Banner";
 import CTAButtons from "@/components/ui/CTAButtons";
 
 
+export const metadata = {
+  title: "Payment | MV The Crown — Luxury River Cruises from Khulna to Sundarbans",
+  description: "Complete your payment securely for MV The Crown luxury river cruises. Confirm your booking, choose your payment method, and enjoy a seamless cruise experience.",
+}
+
+
 export default function Page() {
  
   return (

@@ -2,6 +2,11 @@ import Schedules from "@/components/Schedules/schedules";
 import Banner from "@/components/ui/Banner";
 import getSchedules from "@/lib/getSchedules";
 
+export const metadata = {
+  title: "Schedules | MV The Crown — Luxury River Cruises from Khulna to Sundarbans",
+  description: "Check the latest cruise schedules for MV The Crown from Khulna to the Sundarbans. View departure times, cabin availability, and plan your luxury river journey.",
+}
+
 
 export default async function Page() {
      const schedules = await getSchedules(264);

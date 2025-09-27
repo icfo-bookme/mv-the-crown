@@ -2,6 +2,12 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 import Banner from "@/components/ui/Banner";
  // Adjust path as needed
 
+export const metadata = {
+  title: "Get a Call | MV The Crown — Luxury River Cruises from Khulna to Sundarbans",
+  description: "Request a call from our team to assist with your MV The Crown cruise booking. Get expert guidance, schedule support, and answers to all your queries.",
+}
+
+
 export default function Page() {
   return (
     <div>

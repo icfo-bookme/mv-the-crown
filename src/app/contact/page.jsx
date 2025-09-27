@@ -1,7 +1,4 @@
-export const metadata = {
-  title: "Contact Us | MV The Crown",
-  description: "Get in touch with MV The Crown. Find our office location, phone numbers, email address, and follow us on social media.",
-};
+
 
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Banner from "@/components/ui/Banner";
@@ -9,14 +6,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaCrown } from "react-icons/fa";
 
+export const metadata = {
+  title: "Contact Us | MV The Crown",
+  description: "Get in touch with MV The Crown. Find our office location, phone numbers, email address, and follow us on social media.",
+};
+
 export default function ContactUs() {
   return (
     <>
       <Banner
-       imageUrl="/13.png"
+        imageUrl="/13.png"
         title="Contact Us"
         subtitle=""
-       heightClass=" h-[50vh] lg:h-[70vh]"
+        heightClass=" h-[50vh] lg:h-[70vh]"
       />
       <section className="bg-white min-h-screen py-10 ">
         <div className="max-w-5xl mx-auto">
@@ -48,7 +50,7 @@ export default function ContactUs() {
                   <h3 className="font-semibold text-lg text-gray-800">Phone</h3>
                   <p className="text-gray-600">
                     01841-666644 <br />
-                    
+
                   </p>
                 </div>
               </div>
