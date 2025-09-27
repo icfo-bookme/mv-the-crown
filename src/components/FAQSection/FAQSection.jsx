@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const FAQSection = () => {
   return (
@@ -25,7 +26,9 @@ const FAQSection = () => {
                 <li>18 Panorama Series (Main Deck)</li>
                 <li>14 State Series (Lower Deck)</li>
               </ul>
-              <p>Total capacity: approximately <strong>75 guests</strong>.</p>
+              <p>
+                Total capacity: approximately <strong>75 guests</strong>. Visit our <Link href="/" className="text-blue-800 font-semibold">Home</Link> page for more information.
+              </p>
             </div>
           </details>
 
@@ -41,6 +44,9 @@ const FAQSection = () => {
                 <li>Forest entry permits & armed forest guards</li>
                 <li>Canal boat rides, guided forest walks, wildlife exploration</li>
               </ul>
+              <p className="mt-2">
+                Check the <Link href="/schedule" className="text-blue-800 font-semibold">Schedule</Link> for your cruise.
+              </p>
             </div>
           </details>
 
@@ -52,6 +58,9 @@ const FAQSection = () => {
               <p><strong>Day 1:</strong> Khulna departure → Harbaria Eco-Center → Cruise to Kotka</p>
               <p><strong>Day 2:</strong> Sunrise canal ride → Kotka forest & beach → Kochikhali visit → BBQ & cultural program</p>
               <p><strong>Day 3:</strong> Morning ride → Koromjol Crocodile Center → Return to Khulna</p>
+              <p className="mt-2">
+                Book your <Link href="/ticket" className="text-blue-800 font-semibold">Ticket</Link> today.
+              </p>
             </div>
           </details>
 
@@ -65,6 +74,9 @@ const FAQSection = () => {
                 <li>Locals: NID</li>
                 <li>Foreigners: Passport (extra government forest fees apply)</li>
               </ul>
+              <p className="mt-2">
+                For more details, <Link href="/contact" className="text-blue-800 font-semibold">Contact Us</Link>.
+              </p>
             </div>
           </details>
 
@@ -91,6 +103,9 @@ const FAQSection = () => {
                 <li>Remaining balance before departure</li>
                 <li>Accepted methods: Bank transfer, Bkash, Nagad</li>
               </ul>
+              <p className="mt-2">
+                Make payment via our <Link href="/payment" className="text-blue-800 font-semibold">Payment Options</Link> page.
+              </p>
             </div>
           </details>
 
@@ -104,6 +119,9 @@ const FAQSection = () => {
                 <li>Within 21 days: Partial or no refund (based on notice period)</li>
                 <li>Trips may be rescheduled or cancelled due to weather, river conditions, or government restrictions</li>
               </ul>
+              <p className="mt-2">
+                For questions, <Link href="/contact" className="text-blue-800 font-semibold">Contact Us</Link>.
+              </p>
             </div>
           </details>
 
@@ -163,6 +181,9 @@ const FAQSection = () => {
                 <li>📞 <strong>+880 1841-666644</strong></li>
                 <li>📞 <strong>+880 1841-333322</strong></li>
               </ul>
+              <p className="mt-2">
+                You can also navigate: <Link href="/" className="text-blue-800 font-semibold">Home</Link> | <Link href="/schedule" className="text-blue-800 font-semibold">Schedule</Link> | <Link href="/ticket" className="text-blue-800 font-semibold">Ticket</Link> | <Link href="/payment" className="text-blue-800 font-semibold">Payment Options</Link> | <Link href="/contact" className="text-blue-800 font-semibold">Contact Us</Link>
+              </p>
             </div>
           </details>
 
